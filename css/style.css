@@ -5,8 +5,12 @@
 .nav {
   text-align: center;
 }
-.nav logo-border {
+.nav .logo-border {
   border-bottom: 4px solid #f6f6f6;
+}
+.nav .logo-border .logo .logo-png {
+  height: 75px;
+  padding: 3%;
 }
 
 .city {
@@ -21,30 +25,41 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 2% 0;
 }
 .city .group i {
   color: #353535;
 }
 .city .group .text {
   color: #afafaf;
-  padding: 3% 0;
-  font-size: xx-large;
+  font-size: 32px;
   color: #353535;
 }
 
 .header {
-  text-align: center;
   background-color: #f6f6f6;
   font-family: "Roboto", "sans-serif";
+  padding: 8% 0 8% 0;
+  text-align: -webkit-center;
 }
-.header .title h1 {
+.header .group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10% 0 10%;
+}
+.header .group .title h1 {
+  font-size: 65px;
   font-weight: 600;
   margin-top: 0;
   padding-top: 5%;
+  margin-bottom: 0;
 }
-.header .subtext h2 {
+.header .group .subtext h2 {
+  font-size: 32px;
   font-weight: 100;
-  color: #afafaf;
+  color: #353535;
 }
 .header .button {
   font-size: 20px;
@@ -54,11 +69,12 @@
   padding: 2% 0;
   border-radius: 50px;
   text-decoration: none;
-  width: 100%;
+  width: 460px;
 }
 .header .button a {
   color: white;
   text-decoration: none;
+  font-size: 32px;
 }
 
 .fonctionnement {
@@ -67,12 +83,13 @@
 .fonctionnement .group {
   text-align: center;
 }
-.fonctionnement .group .h3 {
+.fonctionnement .group h3 {
+  text-align-last: left;
   font-family: "Roboto", "sans-serif";
+  font-size: 35px;
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
-  padding: 2% 10% 10% 10%;
+  padding: 2% 0 2% 0;
 }
 .fonctionnement .card-1,
 .fonctionnement .card-2,
