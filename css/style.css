@@ -53,7 +53,6 @@
   font-size: 65px;
   font-weight: 600;
   margin-top: 0;
-  padding-top: 5%;
   margin-bottom: 0;
 }
 .header .group .subtext h2 {
@@ -66,8 +65,8 @@
   color: white;
   background-color: #9356dc;
   border: 1px solid #9356dc;
-  padding: 2% 0;
-  border-radius: 50px;
+  padding: 4% 0;
+  border-radius: 60px;
   text-decoration: none;
   width: 460px;
 }
@@ -79,24 +78,22 @@
 
 .fonctionnement {
   text-align: center;
-}
-.fonctionnement .group {
   text-align: center;
 }
-.fonctionnement .group h3 {
+.fonctionnement h3 {
   text-align-last: left;
   font-family: "Roboto", "sans-serif";
-  font-size: 35px;
+  font-size: 55px;
   display: flex;
   flex-direction: column;
-  padding: 2% 0 2% 0;
+  padding: 2% 0 2% 10%;
 }
 .fonctionnement .card-1,
 .fonctionnement .card-2,
 .fonctionnement .card-3 {
   display: flex;
   border: 1px solid transparent;
-  margin: 0 31%;
+  margin: 0 23%;
   padding: 35px 0px 35px 0px;
   box-shadow: 5px 5px 18px #afafaf;
   border-radius: 25px;
@@ -132,10 +129,10 @@
   padding-left: 10%;
 }
 
-.restaurants .group .card-1 .image,
-.restaurants .group .card-2 .image,
-.restaurants .group .card-3 .image,
-.restaurants .group .card-4 .image {
+.restaurants .card-1 .image,
+.restaurants .card-2 .image,
+.restaurants .card-3 .image,
+.restaurants .card-4 .image {
   width: 100%;
   height: 200px;
   object-fit: cover;
