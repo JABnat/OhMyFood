@@ -22,20 +22,22 @@
   background-color: #f6f6f6;
 }
 
-.functionnementgroup {
+.fonctionnement {
   text-align: center;
 }
-.functionnementgroup .h3 {
+.fonctionnement .group {
+  text-align: center;
+}
+.fonctionnement .group .h3 {
   font-family: "Roboto", "sans-serif";
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
   padding: 2% 10% 10% 10%;
 }
-
-.card-1,
-.card-2,
-.card-3 {
+.fonctionnement .card-1,
+.fonctionnement .card-2,
+.fonctionnement .card-3 {
   display: flex;
   border: 1px solid transparent;
   margin: 0 31%;
@@ -45,9 +47,9 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.card-1 .functionnumber,
-.card-2 .functionnumber,
-.card-3 .functionnumber {
+.fonctionnement .card-1 .numberbubble,
+.fonctionnement .card-2 .numberbubble,
+.fonctionnement .card-3 .numberbubble {
   border-radius: 100%;
   height: 2%;
   width: 2%;
@@ -61,6 +63,17 @@
   transition-duration: 0.1s;
   font-weight: bold;
   color: white;
+}
+.fonctionnement .card-1 i,
+.fonctionnement .card-2 i,
+.fonctionnement .card-3 i {
+  color: #afafaf;
+}
+
+.restaurants .group .card-1 .image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
