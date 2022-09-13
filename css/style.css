@@ -15,11 +15,50 @@
   place-content: center;
   background-color: #eaeaea;
   padding-left: 1%;
+  font-family: "Roboto", "sans-serif";
+}
+.city .group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.city .group i {
+  color: #353535;
+}
+.city .group .text {
+  color: #afafaf;
+  padding: 3% 0;
+  font-size: xx-large;
+  color: #353535;
 }
 
 .header {
   text-align: center;
   background-color: #f6f6f6;
+  font-family: "Roboto", "sans-serif";
+}
+.header .title h1 {
+  font-weight: 600;
+  margin-top: 0;
+  padding-top: 5%;
+}
+.header .subtext h2 {
+  font-weight: 100;
+  color: #afafaf;
+}
+.header .button {
+  font-size: 20px;
+  color: white;
+  background-color: #9356dc;
+  border: 1px solid #9356dc;
+  padding: 2% 0;
+  border-radius: 50px;
+  text-decoration: none;
+  width: 100%;
+}
+.header .button a {
+  color: white;
+  text-decoration: none;
 }
 
 .fonctionnement {
@@ -76,7 +115,10 @@
   padding-left: 10%;
 }
 
-.restaurants .group .card-1 .image {
+.restaurants .group .card-1 .image,
+.restaurants .group .card-2 .image,
+.restaurants .group .card-3 .image,
+.restaurants .group .card-4 .image {
   width: 100%;
   height: 200px;
   object-fit: cover;
