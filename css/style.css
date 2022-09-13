@@ -68,6 +68,12 @@
 .fonctionnement .card-2 i,
 .fonctionnement .card-3 i {
   color: #afafaf;
+  padding-left: 10%;
+}
+.fonctionnement .card-1 .text,
+.fonctionnement .card-2 .text,
+.fonctionnement .card-3 .text {
+  padding-left: 10%;
 }
 
 .restaurants .group .card-1 .image {

@@ -25,7 +25,7 @@
   .group {
     text-align: center;
     .h3 {
-      font-family: "Roboto", "sans-serif";
+      font-family: $primary-font;
       display: flex;
       flex-direction: column;
       background-color: $grey-background;
@@ -60,6 +60,10 @@
     }
     & i {
       color: $grey-font;
+      padding-left: 10%;
+    }
+    .text {
+      padding-left: 10%;
     }
   }
 }
