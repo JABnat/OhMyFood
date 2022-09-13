@@ -1,0 +1,66 @@
+/* COLORS */
+/* COLORS */
+/* FONTS */
+/* FONTS */
+.nav {
+  text-align: center;
+}
+.nav logo-border {
+  border-bottom: 4px solid #f6f6f6;
+}
+
+.city {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  background-color: #eaeaea;
+  padding-left: 1%;
+}
+
+.header {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.functionnementgroup {
+  text-align: center;
+}
+.functionnementgroup .h3 {
+  font-family: "Roboto", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 2% 10% 10% 10%;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  border: 1px solid transparent;
+  margin: 0 31%;
+  padding: 35px 0px 35px 0px;
+  box-shadow: 5px 5px 18px #afafaf;
+  border-radius: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card-1 .functionnumber,
+.card-2 .functionnumber,
+.card-3 .functionnumber {
+  border-radius: 100%;
+  height: 2%;
+  width: 2%;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356dc;
+  margin: -0.5rem;
+  transition-duration: 0.1s;
+  font-weight: bold;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
