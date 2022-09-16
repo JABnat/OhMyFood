@@ -82,7 +82,7 @@
 
 .fonctionnement {
   text-align: center;
-  text-align: center;
+  padding-bottom: 10%;
   h3 {
     text-align-last: left;
     font-family: $primary-font;
@@ -91,12 +91,12 @@
     flex-direction: column;
     padding: 2% 0 2% 10%;
   }
-
   .card-1,
   .card-2,
   .card-3 {
     display: flex;
     border: 1px solid transparent;
+    font-family: $primary-font;
     margin: 0 23%;
     padding: 35px 0px 35px 0px;
     box-shadow: 5px 5px 18px $grey-font;
@@ -117,6 +117,7 @@
       transition-duration: 0.1s;
       font-weight: bold;
       color: white;
+      margin-left: -21px;
     }
     & i {
       color: $grey-font;
@@ -124,18 +125,49 @@
     }
     .text {
       padding-left: 10%;
+      font-size: 25px;
+      font-weight: 500;
     }
   }
 }
 .restaurants {
-  .card-1,
-  .card-2,
-  .card-3,
-  .card-4 {
-    .image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+  background-color: $grey-background;
+  padding-top: 5%;
+  h3 {
+    font-size: 32px;
+    font-family: $primary-font;
+    padding-left: 5%;
+  }
+  .group {
+    background-color: $grey-background;
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+      height: 400px;
+      .image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.footer {
+  background-color: $not-quite-black;
+  color: white;
+  text-decoration: none;
+  & h3 {
+    .icon {
+      .links {
+        & i {
+          color: white;
+          .link {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 }
