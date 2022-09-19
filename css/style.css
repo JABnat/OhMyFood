@@ -2,11 +2,10 @@
 /* COLORS */
 /* FONTS */
 /* FONTS */
+/* SHADOW */
+/* SHADOW */
 .nav {
   text-align: center;
-}
-.nav .logo-border {
-  border-bottom: 4px solid #f6f6f6;
 }
 .nav .logo-border .logo .logo-png {
   height: 75px;
@@ -79,6 +78,7 @@
 .fonctionnement {
   text-align: center;
   padding-bottom: 10%;
+  text-align: -webkit-center;
 }
 .fonctionnement h3 {
   text-align-last: left;
@@ -94,12 +94,16 @@
   display: flex;
   border: 1px solid transparent;
   font-family: "Roboto", "sans-serif";
-  margin: 0 23%;
   padding: 35px 0px 35px 0px;
   box-shadow: 5px 5px 18px #afafaf;
   border-radius: 25px;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 0 0 30px 5%;
+  background-color: #f6f6f6;
+  width: 60%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .fonctionnement .card-1 .numberbubble,
 .fonctionnement .card-2 .numberbubble,
@@ -165,6 +169,8 @@ h4 {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 5px 5px 18px #afafaf;
+  margin-bottom: 5%;
 }
 .group .card-1 .image,
 .group .card-2 .image,
