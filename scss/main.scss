@@ -19,11 +19,14 @@
   background-color: $grey-header;
   padding-left: 1%;
   font-family: $primary-font;
+  justify-content: center;
   .group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 2% 0;
+    align-items: center;
+    gap: 35px;
     & i {
       color: $not-quite-black;
     }
@@ -103,7 +106,7 @@
     align-items: center;
     margin: 0 0 30px 5%;
     background-color: #f6f6f6;
-    width: 60%;
+    width: 85%;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
@@ -111,8 +114,8 @@
       border-radius: 100%;
       height: 2%;
       width: 2%;
-      min-height: 40px;
-      min-width: 40px;
+      min-height: 70px;
+      min-width: 70px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -122,6 +125,9 @@
       font-weight: bold;
       color: white;
       margin-left: -21px;
+      .number {
+        font-size: 30px;
+      }
     }
     & i {
       color: $grey-font;
@@ -129,7 +135,7 @@
     }
     .text {
       padding-left: 10%;
-      font-size: 25px;
+      font-size: 40px;
       font-weight: 500;
     }
   }
@@ -149,6 +155,7 @@ h4 {
   margin-top: 10px;
   font-family: $primary-font;
   font-weight: 300;
+  font-size: 20px;
 }
 .group {
   display: flex;
@@ -187,6 +194,7 @@ h4 {
       justify-content: space-between;
       & h2 {
         font-family: $primary-font;
+        font-size: 42px;
       }
     }
   }
