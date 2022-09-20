@@ -150,29 +150,27 @@
   padding-top: 5%;
 }
 .restaurants h3 {
-  font-size: 32px;
+  font-size: 42px;
   font-family: "Roboto", "sans-serif";
   margin: 5% 0 5% 5%;
   width: 100%;
 }
-
-h4 {
+.restaurants h4 {
   margin-top: 10px;
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
   font-size: 20px;
 }
-
-.group {
+.restaurants .group {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
 }
-.group .card-1,
-.group .card-2,
-.group .card-3,
-.group .card-4 {
+.restaurants .group .card-1,
+.restaurants .group .card-2,
+.restaurants .group .card-3,
+.restaurants .group .card-4 {
   background-color: white;
   border-radius: 20px;
   width: 90%;
@@ -181,27 +179,27 @@ h4 {
   box-shadow: 5px 5px 18px #afafaf;
   margin-bottom: 5%;
 }
-.group .card-1 .image,
-.group .card-2 .image,
-.group .card-3 .image,
-.group .card-4 .image {
+.restaurants .group .card-1 .image,
+.restaurants .group .card-2 .image,
+.restaurants .group .card-3 .image,
+.restaurants .group .card-4 .image {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 400px;
 }
-.group .card-1 .image .img,
-.group .card-2 .image .img,
-.group .card-3 .image .img,
-.group .card-4 .image .img {
+.restaurants .group .card-1 .image .img,
+.restaurants .group .card-2 .image .img,
+.restaurants .group .card-3 .image .img,
+.restaurants .group .card-4 .image .img {
   height: 400px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-.group .card-1 .text-layout,
-.group .card-2 .text-layout,
-.group .card-3 .text-layout,
-.group .card-4 .text-layout {
+.restaurants .group .card-1 .text-layout,
+.restaurants .group .card-2 .text-layout,
+.restaurants .group .card-3 .text-layout,
+.restaurants .group .card-4 .text-layout {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -210,12 +208,20 @@ h4 {
   padding: 0 5%;
   justify-content: space-between;
 }
-.group .card-1 .text-layout h2,
-.group .card-2 .text-layout h2,
-.group .card-3 .text-layout h2,
-.group .card-4 .text-layout h2 {
+.restaurants .group .card-1 .text-layout h2,
+.restaurants .group .card-2 .text-layout h2,
+.restaurants .group .card-3 .text-layout h2,
+.restaurants .group .card-4 .text-layout h2 {
   font-family: "Roboto", "sans-serif";
   font-size: 42px;
+}
+.restaurants .group .card-1 .text-layout h4,
+.restaurants .group .card-2 .text-layout h4,
+.restaurants .group .card-3 .text-layout h4,
+.restaurants .group .card-4 .text-layout h4 {
+  font-family: "Roboto", "sans-serif";
+  font-size: 35px;
+  margin-top: -17px;
 }
 
 .footer {
@@ -223,10 +229,24 @@ h4 {
   color: white;
   text-decoration: none;
 }
-.footer h3 .icon .links i {
+.footer h3 {
+  font-size: xxx-large;
+}
+.footer .group {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.footer .group .icon .links {
+  text-decoration: none;
   color: white;
 }
-.footer h3 .icon .links i .link {
+.footer .group .icon .links i {
+  color: white;
+}
+.footer .group .icon .links i .link {
   color: white;
   text-decoration: none;
 }
