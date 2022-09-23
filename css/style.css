@@ -252,18 +252,24 @@ body {
   align-items: flex-start;
   font-family: "Roboto", "sans-serif";
 }
+.footer .footer-group .group .icon {
+  padding-bottom: 10px;
+}
 .footer .footer-group .group .icon a {
   text-decoration: none;
   color: white;
 }
 .footer .footer-group .group .icon a i {
   color: white;
-  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer .footer-group .group .icon a span {
+  padding-left: 8px;
 }
 .footer .footer-group .group .link {
   text-decoration: none;
   color: white;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

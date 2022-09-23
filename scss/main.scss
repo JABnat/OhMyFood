@@ -229,19 +229,23 @@ body {
       align-items: flex-start;
       font-family: $primary-font;
       .icon {
+        padding-bottom: 10px;
         & a {
           text-decoration: none;
           color: white;
           & i {
             color: white;
-            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          & span {
+            padding-left: 8px;
           }
         }
       }
       .link {
         text-decoration: none;
         color: white;
-        padding-top: 10px;
+        padding-bottom: 10px;
       }
     }
   }
