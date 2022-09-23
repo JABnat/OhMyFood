@@ -38,7 +38,7 @@
   color: #353535;
 }
 
-.body {
+body {
   margin: 0;
 }
 
@@ -233,23 +233,37 @@
   background-color: #353535;
   color: white;
   text-decoration: none;
+  margin-top: 0;
 }
-.footer h3 {
-  font-size: 1.5em;
+.footer .footer-group {
+  padding: 1.25em;
 }
-.footer .group {
+.footer .footer-group h3 {
+  font-size: 1.1em;
+  font-weight: 100;
+  margin-top: 0;
+  font-family: "Shrikhand", "cursive";
+}
+.footer .footer-group .group {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   flex-wrap: nowrap;
   align-items: flex-start;
+  font-family: "Roboto", "sans-serif";
 }
-.footer .group .icon .links {
+.footer .footer-group .group .icon a {
   text-decoration: none;
   color: white;
 }
-.footer .group .icon .links i {
+.footer .footer-group .group .icon a i {
   color: white;
+  padding-top: 10px;
+}
+.footer .footer-group .group .link {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
