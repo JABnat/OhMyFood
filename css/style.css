@@ -8,7 +8,7 @@
   text-align: center;
 }
 .nav .logo-border .logo .logo-png {
-  height: 75px;
+  height: 2em;
   padding: 3%;
 }
 
@@ -27,55 +27,60 @@
   flex-wrap: wrap;
   padding: 2% 0;
   align-items: center;
-  gap: 35px;
+  gap: 20px;
 }
 .city .group i {
   color: #353535;
 }
 .city .group .text {
   color: #afafaf;
-  font-size: 32px;
+  font-size: 1em;
   color: #353535;
+}
+
+.body {
+  margin: 0;
 }
 
 .header {
   background-color: #f6f6f6;
   font-family: "Roboto", "sans-serif";
-  padding: 8% 0 8% 0;
-  text-align: -webkit-center;
+  padding: 6%;
+  text-align: center;
 }
 .header .group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 10% 0 10%;
+  padding: 0 6% 0 6%;
 }
 .header .group .title h1 {
-  font-size: 65px;
+  font-size: 1.5em;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 0;
 }
 .header .group .subtext h2 {
-  font-size: 32px;
+  font-size: 1em;
   font-weight: 100;
   color: #353535;
 }
-.header .button {
-  font-size: 20px;
+.header .btn {
+  padding: 0 12%;
+}
+.header .btn .button {
   color: white;
   background-color: #9356dc;
   border: 1px solid #9356dc;
   padding: 4% 0;
   border-radius: 60px;
   text-decoration: none;
-  width: 460px;
 }
-.header .button a {
+.header .btn .button a {
   color: white;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 1em;
 }
 
 .fonctionnement {
@@ -86,7 +91,7 @@
 .fonctionnement h3 {
   text-align-last: left;
   font-family: "Roboto", "sans-serif";
-  font-size: 55px;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   padding: 2% 0 2% 10%;
@@ -97,7 +102,7 @@
   display: flex;
   border: 1px solid transparent;
   font-family: "Roboto", "sans-serif";
-  padding: 35px 0px 35px 0px;
+  padding: 20px 0px 20px 0px;
   box-shadow: 5px 5px 18px #afafaf;
   border-radius: 25px;
   align-items: center;
@@ -114,8 +119,8 @@
   border-radius: 100%;
   height: 2%;
   width: 2%;
-  min-height: 70px;
-  min-width: 70px;
+  min-height: 1.5em;
+  min-width: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,12 +129,12 @@
   transition-duration: 0.1s;
   font-weight: bold;
   color: white;
-  margin-left: -21px;
+  margin-left: -13px;
 }
 .fonctionnement .card-1 .numberbubble .number,
 .fonctionnement .card-2 .numberbubble .number,
 .fonctionnement .card-3 .numberbubble .number {
-  font-size: 30px;
+  font-size: 0.75em;
 }
 .fonctionnement .card-1 i,
 .fonctionnement .card-2 i,
@@ -141,7 +146,7 @@
 .fonctionnement .card-2 .text,
 .fonctionnement .card-3 .text {
   padding-left: 10%;
-  font-size: 40px;
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -150,7 +155,7 @@
   padding-top: 5%;
 }
 .restaurants h3 {
-  font-size: 42px;
+  font-size: 1.5em;
   font-family: "Roboto", "sans-serif";
   margin: 5% 0 5% 5%;
   width: 100%;
@@ -159,7 +164,7 @@
   margin-top: 10px;
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1em;
 }
 .restaurants .group {
   display: flex;
@@ -186,13 +191,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 400px;
+  height: 180px;
 }
 .restaurants .group .card-1 .image .img,
 .restaurants .group .card-2 .image .img,
 .restaurants .group .card-3 .image .img,
 .restaurants .group .card-4 .image .img {
-  height: 400px;
+  height: 180px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -213,15 +218,15 @@
 .restaurants .group .card-3 .text-layout h2,
 .restaurants .group .card-4 .text-layout h2 {
   font-family: "Roboto", "sans-serif";
-  font-size: 42px;
+  font-size: 1em;
 }
 .restaurants .group .card-1 .text-layout h4,
 .restaurants .group .card-2 .text-layout h4,
 .restaurants .group .card-3 .text-layout h4,
 .restaurants .group .card-4 .text-layout h4 {
   font-family: "Roboto", "sans-serif";
-  font-size: 35px;
-  margin-top: -17px;
+  font-size: 1em;
+  margin-top: -7px;
 }
 
 .footer {
@@ -230,7 +235,7 @@
   text-decoration: none;
 }
 .footer h3 {
-  font-size: xxx-large;
+  font-size: 1.5em;
 }
 .footer .group {
   display: flex;
@@ -245,10 +250,6 @@
 }
 .footer .group .icon .links i {
   color: white;
-}
-.footer .group .icon .links i .link {
-  color: white;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
