@@ -1,0 +1,140 @@
+@import "./variables.scss";
+@import "./animations.scss";
+
+body {
+  margin: 0;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  header {
+    .nav {
+      text-align: center;
+      .logo-border {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3em;
+        .back {
+          color: black;
+          padding: 1em;
+        }
+        .logo {
+          .logo-png {
+            width: 11em;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    border: 2px solid $grey-background;
+    border-radius: 2em;
+    background-color: $grey-background;
+    margin-top: -26px;
+    z-index: 2;
+  }
+  .title-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2em 0 1.2em;
+    & h2 {
+      font-family: $secondary-font;
+      & i {
+      }
+    }
+  }
+  .text-group {
+    font-family: $primary-font;
+    padding: 0 1em 1em 1em;
+    & h3 {
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+    .underline {
+      border: 2px solid $tertiary-color;
+      width: 40px;
+      margin-top: 5px;
+    }
+  }
+  .cards {
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: $box-shadow;
+    margin-bottom: 5%;
+    padding: 1em;
+    & p {
+      font-weight: 100;
+      margin: 0;
+    }
+    & strong {
+      font-weight: 500;
+    }
+  }
+  .text-icon {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.4em 5% 0 0;
+    justify-content: space-between;
+    font-size: smaller;
+  }
+}
+img {
+  width: 100%;
+  z-index: 1;
+}
+.footer {
+  background-color: $not-quite-black;
+  color: white;
+  text-decoration: none;
+  margin-top: 0;
+  .footer-group {
+    padding: 1.25em;
+    & h3 {
+      font-size: 1.1em;
+      font-weight: 100;
+      margin-top: 0;
+      font-family: $secondary-font;
+    }
+    .group {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      font-family: $primary-font;
+      .icon {
+        padding-bottom: 10px;
+        & a {
+          text-decoration: none;
+          color: white;
+          & i {
+            color: white;
+            padding-bottom: 10px;
+          }
+          & span {
+            padding-left: 8px;
+          }
+        }
+      }
+      .link {
+        text-decoration: none;
+        color: white;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

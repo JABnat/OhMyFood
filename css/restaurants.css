@@ -1,0 +1,140 @@
+/* COLORS */
+/* COLORS */
+/* FONTS */
+/* FONTS */
+/* SHADOW */
+/* SHADOW */
+body {
+  margin: 0;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+body header .nav {
+  text-align: center;
+}
+body header .nav .logo-border {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3em;
+}
+body header .nav .logo-border .back {
+  color: black;
+  padding: 1em;
+}
+body header .nav .logo-border .logo .logo-png {
+  width: 11em;
+}
+body .content {
+  border: 2px solid #f6f6f6;
+  border-radius: 2em;
+  background-color: #f6f6f6;
+  margin-top: -26px;
+  z-index: 2;
+}
+body .title-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.2em 0 1.2em;
+}
+body .title-group h2 {
+  font-family: "Shrikhand", "cursive";
+}
+body .text-group {
+  font-family: "Roboto", "sans-serif";
+  padding: 0 1em 1em 1em;
+}
+body .text-group h3 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+body .text-group .underline {
+  border: 2px solid #99e2d0;
+  width: 40px;
+  margin-top: 5px;
+}
+body .cards {
+  background-color: white;
+  border-radius: 20px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 18px #afafaf;
+  margin-bottom: 5%;
+  padding: 1em;
+}
+body .cards p {
+  font-weight: 100;
+  margin: 0;
+}
+body .cards strong {
+  font-weight: 500;
+}
+body .text-icon {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.4em 5% 0 0;
+  justify-content: space-between;
+  font-size: smaller;
+}
+
+img {
+  width: 100%;
+  z-index: 1;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
+  margin-top: 0;
+}
+.footer .footer-group {
+  padding: 1.25em;
+}
+.footer .footer-group h3 {
+  font-size: 1.1em;
+  font-weight: 100;
+  margin-top: 0;
+  font-family: "Shrikhand", "cursive";
+}
+.footer .footer-group .group {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  font-family: "Roboto", "sans-serif";
+}
+.footer .footer-group .group .icon {
+  padding-bottom: 10px;
+}
+.footer .footer-group .group .icon a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footer-group .group .icon a i {
+  color: white;
+  padding-bottom: 10px;
+}
+.footer .footer-group .group .icon a span {
+  padding-left: 8px;
+}
+.footer .footer-group .group .link {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=restaurants.css.map */

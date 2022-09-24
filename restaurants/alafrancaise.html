@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <link href="scss/main.scss" type="text/scss" rel="stylesheet" />
+    <link href="../css/restaurants.css" type="text/css" rel="stylesheet" />
+    <link href="../scss/restaurants.scss" type="text/scss" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +21,22 @@
     <!-- /ICONS -->
   </head>
   <body>
+    <header>
+      <div class="nav">
+        <div class="logo-border">
+          <a class="back" href="#">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </a>
+          <a class="logo" href="#">
+            <img
+              class="logo-png"
+              src="/images/logo/ohmyfood.png"
+              alt="oh my food logo"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
     <img
       class="background"
       src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -28,18 +44,22 @@
     />
     <div class="content">
       <div class="title-group">
-        <h2>à la française</h2>
+        <h2>À la française</h2>
         <i class="fa-regular fa-heart fa-xl"></i>
       </div>
       <div class="text-group">
         <h3>ENTRÉES</h3>
+        <p class="underline"></p>
         <div class="cards">
           <p><strong>Tartare de poulpe acidulé</strong></p>
           <div class="text-icon">
-            <p>Aux zests d'orange</p>
-            <p><strong>25€</strong></p>
+            <div class="ingreditents">
+              <p>Aux zests d'orange</p>
+            </div>
+            <div class="price">
+              <p><strong>25€</strong></p>
+            </div>
           </div>
-          <p></p>
         </div>
       </div>
     </div>
