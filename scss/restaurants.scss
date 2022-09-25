@@ -33,7 +33,7 @@ body {
 
   .content {
     border: 2px solid $grey-background;
-    border-radius: 2em;
+    border-radius: 2em 2em 0 0;
     background-color: $grey-background;
     margin-top: -26px;
     z-index: 2;
@@ -99,6 +99,26 @@ body {
     width: 100%;
     z-index: 1;
   }
+
+  .btn {
+    padding: 2em 5em 2em 5em;
+    text-align: center;
+    font-family: $primary-font;
+    .button {
+      color: white;
+      background-color: #9356dc;
+      border: 1px solid #9356dc;
+      padding: 4% 0;
+      border-radius: 60px;
+      text-decoration: none;
+      & a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+      }
+    }
+  }
+
   .footer {
     background-color: $not-quite-black;
     color: white;

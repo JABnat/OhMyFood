@@ -32,7 +32,7 @@ body header .nav .logo-border .logo .logo-png {
 }
 body .content {
   border: 2px solid #f6f6f6;
-  border-radius: 2em;
+  border-radius: 2em 2em 0 0;
   background-color: #f6f6f6;
   margin-top: -26px;
   z-index: 2;
@@ -97,6 +97,24 @@ body .cards .text-icon {
 body img {
   width: 100%;
   z-index: 1;
+}
+body .btn {
+  padding: 2em 5em 2em 5em;
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+}
+body .btn .button {
+  color: white;
+  background-color: #9356dc;
+  border: 1px solid #9356dc;
+  padding: 4% 0;
+  border-radius: 60px;
+  text-decoration: none;
+}
+body .btn .button a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
 }
 body .footer {
   background-color: #353535;
