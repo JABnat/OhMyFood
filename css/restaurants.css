@@ -61,7 +61,9 @@ body .text-group .underline {
   width: 40px;
   margin-top: 5px;
 }
-body .cards {
+body .cards .card-1,
+body .cards .card-2,
+body .cards .card-3 {
   background-color: white;
   border-radius: 20px;
   width: 90%;
@@ -71,14 +73,18 @@ body .cards {
   margin-bottom: 5%;
   padding: 1em;
 }
-body .cards p {
+body .cards .card-1 p,
+body .cards .card-2 p,
+body .cards .card-3 p {
   font-weight: 100;
   margin: 0;
 }
-body .cards strong {
+body .cards .card-1 strong,
+body .cards .card-2 strong,
+body .cards .card-3 strong {
   font-weight: 500;
 }
-body .text-icon {
+body .cards .text-icon {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -88,28 +94,26 @@ body .text-icon {
   justify-content: space-between;
   font-size: smaller;
 }
-
-img {
+body img {
   width: 100%;
   z-index: 1;
 }
-
-.footer {
+body .footer {
   background-color: #353535;
   color: white;
   text-decoration: none;
   margin-top: 0;
 }
-.footer .footer-group {
+body .footer .footer-group {
   padding: 1.25em;
 }
-.footer .footer-group h3 {
+body .footer .footer-group h3 {
   font-size: 1.1em;
   font-weight: 100;
   margin-top: 0;
   font-family: "Shrikhand", "cursive";
 }
-.footer .footer-group .group {
+body .footer .footer-group .group {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -117,21 +121,21 @@ img {
   align-items: flex-start;
   font-family: "Roboto", "sans-serif";
 }
-.footer .footer-group .group .icon {
+body .footer .footer-group .group .icon {
   padding-bottom: 10px;
 }
-.footer .footer-group .group .icon a {
+body .footer .footer-group .group .icon a {
   text-decoration: none;
   color: white;
 }
-.footer .footer-group .group .icon a i {
+body .footer .footer-group .group .icon a i {
   color: white;
   padding-bottom: 10px;
 }
-.footer .footer-group .group .icon a span {
+body .footer .footer-group .group .icon a span {
   padding-left: 8px;
 }
-.footer .footer-group .group .link {
+body .footer .footer-group .group .link {
   text-decoration: none;
   color: white;
   padding-bottom: 10px;
