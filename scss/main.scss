@@ -174,38 +174,41 @@ body {
       flex-wrap: wrap;
       box-shadow: $box-shadow;
       margin-bottom: 5%;
-      & a {
-        .image {
-          display: flex;
-          flex-direction: column;
+      .image {
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+        width: 100%;
+        .img {
           height: 180px;
-          .img {
-            height: 180px;
-            object-fit: cover;
-            border-radius: 20px 20px 0 0;
-          }
+          object-fit: cover;
+          border-radius: 20px 20px 0 0;
         }
       }
-      & a {
-        .text-layout {
-          display: flex;
-          flex-direction: row;
-          align-content: center;
-          align-items: center;
-          width: 100%;
-          padding: 0 5%;
-          justify-content: space-between;
-          & h2 {
-            font-family: $primary-font;
-            font-size: 1em;
-          }
-          & h4 {
-            font-family: $primary-font;
-            font-size: 1em;
-            margin-top: -7px;
-          }
+      .text-layout {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 5%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 6%;
+        & h2 {
+          font-family: $primary-font;
+          font-size: 1em;
+          text-decoration: none;
         }
-        .text {
+        & h4 {
+          font-family: $primary-font;
+          font-size: 1em;
+          margin-top: -7px;
+          text-decoration: none;
+        }
+      }
+      .text {
+        & a {
           color: black;
         }
       }
@@ -284,6 +287,11 @@ body {
     .card-3,
     .card-4 {
       margin: 0;
+    }
+  }
+  .restaurants {
+    & h3 {
+      margin: 0 0 5% 5%;
     }
   }
 }
