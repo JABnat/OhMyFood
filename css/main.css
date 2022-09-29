@@ -158,6 +158,7 @@ body {
   font-size: 1.5em;
   font-family: "Roboto", "sans-serif";
   margin: 5% 0 5% 5%;
+  width: 100%;
 }
 .restaurants h4 {
   margin-top: 10px;
@@ -280,27 +281,6 @@ body {
   .body {
     margin: 0 auto;
   }
-  .header .btn {
-    padding: 0 34%;
-  }
-  .header .btn .button {
-    padding: 9% 0;
-  }
-  .fonctionnement h3 {
-    padding: 2% 0 2% 6%;
-  }
-  .fonctionnement .cards {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
-    padding: 0 2%;
-  }
-  .fonctionnement .card-1,
-.fonctionnement .card-2,
-.fonctionnement .card-3,
-.fonctionnement .card-4 {
-    margin: 0;
-  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

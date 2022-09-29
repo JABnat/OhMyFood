@@ -48,6 +48,7 @@ body {
     & h2 {
       font-family: $secondary-font;
       & i {
+        color: $not-quite-black;
       }
     }
   }
@@ -101,7 +102,7 @@ body {
   }
 
   .btn {
-    padding: 2em 5em 2em 5em;
+    padding: 2em 5em 3em 5em;
     text-align: center;
     font-family: $primary-font;
     .button {

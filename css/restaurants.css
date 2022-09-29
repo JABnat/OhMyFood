@@ -48,6 +48,9 @@ body .title-group {
 body .title-group h2 {
   font-family: "Shrikhand", "cursive";
 }
+body .title-group h2 i {
+  color: #353535;
+}
 body .text-group {
   font-family: "Roboto", "sans-serif";
   padding: 0 1em 1em 1em;
@@ -99,7 +102,7 @@ body img {
   z-index: 1;
 }
 body .btn {
-  padding: 2em 5em 2em 5em;
+  padding: 2em 5em 3em 5em;
   text-align: center;
   font-family: "Roboto", "sans-serif";
 }
