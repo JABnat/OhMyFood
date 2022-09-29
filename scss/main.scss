@@ -273,25 +273,36 @@ body {
     }
   }
   .fonctionnement {
+    padding-bottom: 5%;
     & h3 {
       padding: 2% 0 2% 6%;
     }
     .cards {
       display: flex;
       flex-wrap: nowrap;
-      gap: 30px;
+      gap: 1.5em;
       padding: 0 2%;
     }
     .card-1,
     .card-2,
     .card-3,
     .card-4 {
-      margin: 0;
+      .text {
+        padding-left: 0.6em;
+      }
     }
   }
   .restaurants {
     & h3 {
       margin: 0 0 5% 5%;
+    }
+    .group {
+      .card-1,
+      .card-2,
+      .card-3,
+      .card-4 {
+        width: 43%;
+      }
     }
   }
 }

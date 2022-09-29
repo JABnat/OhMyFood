@@ -291,23 +291,32 @@ body {
   .header .btn .button {
     padding: 9% 0;
   }
+  .fonctionnement {
+    padding-bottom: 5%;
+  }
   .fonctionnement h3 {
     padding: 2% 0 2% 6%;
   }
   .fonctionnement .cards {
     display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 1.5em;
     padding: 0 2%;
   }
-  .fonctionnement .card-1,
-.fonctionnement .card-2,
-.fonctionnement .card-3,
-.fonctionnement .card-4 {
-    margin: 0;
+  .fonctionnement .card-1 .text,
+.fonctionnement .card-2 .text,
+.fonctionnement .card-3 .text,
+.fonctionnement .card-4 .text {
+    padding-left: 0.6em;
   }
   .restaurants h3 {
     margin: 0 0 5% 5%;
+  }
+  .restaurants .group .card-1,
+.restaurants .group .card-2,
+.restaurants .group .card-3,
+.restaurants .group .card-4 {
+    width: 43%;
   }
 }
 
