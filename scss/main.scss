@@ -1,6 +1,47 @@
 @import "./variables.scss";
 @import "./animations.scss";
+// LOADING //
+.loading-page {
+  background: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disappear 1s forwards;
+  animation-delay: 3s;
+  .loader {
+    border: 16px solid lightgrey;
+    border-top: 16px solid blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes disappear {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// LOADING //
+
+// MENU //
 .nav {
   text-align: center;
   .logo-border {
@@ -47,7 +88,7 @@ body {
   text-align: center;
   .group {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 6% 0 6%;
@@ -71,8 +112,7 @@ body {
     padding: 0 12%;
     .button {
       color: white;
-      background-color: #9356dc;
-      border: 1px solid #9356dc;
+      background: linear-gradient(#ff79da, #9356dc);
       padding: 4% 0;
       border-radius: 60px;
       text-decoration: none;
@@ -81,6 +121,9 @@ body {
         text-decoration: none;
         font-size: 1em;
       }
+    }
+    .button:hover {
+      opacity: 0.8;
     }
   }
 }
@@ -206,6 +249,20 @@ body {
           margin-top: -7px;
           text-decoration: none;
         }
+        .heart {
+          position: relative;
+          .fa-solid {
+            position: absolute;
+            left: 0;
+            top: 18px;
+            margin-top: -10px;
+            visibility: hidden;
+          }
+          .fa-solid:active {
+            visibility: visible;
+            color: $primary-color;
+          }
+        }
       }
       .text {
         & a {
@@ -258,6 +315,7 @@ body {
     }
   }
 }
+// MENU //
 
 // media queries //
 @media all and (min-width: 992px) {
@@ -268,7 +326,10 @@ body {
     .btn {
       padding: 0 34%;
       .button {
-        padding: 9% 0;
+        padding: 6% 0;
+        & a {
+          font-size: 1.5em;
+        }
       }
     }
   }
@@ -315,7 +376,6 @@ body {
     .btn {
       padding: 0 34%;
       .button {
-        padding: 0 20%;
       }
     }
   }
