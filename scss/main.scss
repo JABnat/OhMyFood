@@ -124,6 +124,7 @@ body {
     }
     .button:hover {
       opacity: 0.8;
+      cursor: pointer;
     }
   }
 }
@@ -253,14 +254,21 @@ body {
           position: relative;
           .fa-solid {
             position: absolute;
-            left: 0;
             top: 18px;
+            left: 0px;
             margin-top: -10px;
             visibility: hidden;
           }
+          .fa-solid:hover {
+            visibility: visible;
+            opacity: 1;
+            cursor: pointer;
+          }
           .fa-solid:active {
             visibility: visible;
+            opacity: 1;
             color: $primary-color;
+            cursor: pointer;
           }
         }
       }

@@ -120,6 +120,7 @@ body {
 }
 .header .btn .button:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .fonctionnement {
@@ -281,17 +282,27 @@ body {
 .restaurants .group .card-3 .text-layout .heart .fa-solid,
 .restaurants .group .card-4 .text-layout .heart .fa-solid {
   position: absolute;
-  left: 0;
   top: 18px;
+  left: 0px;
   margin-top: -10px;
   visibility: hidden;
+}
+.restaurants .group .card-1 .text-layout .heart .fa-solid:hover,
+.restaurants .group .card-2 .text-layout .heart .fa-solid:hover,
+.restaurants .group .card-3 .text-layout .heart .fa-solid:hover,
+.restaurants .group .card-4 .text-layout .heart .fa-solid:hover {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
 }
 .restaurants .group .card-1 .text-layout .heart .fa-solid:active,
 .restaurants .group .card-2 .text-layout .heart .fa-solid:active,
 .restaurants .group .card-3 .text-layout .heart .fa-solid:active,
 .restaurants .group .card-4 .text-layout .heart .fa-solid:active {
   visibility: visible;
+  opacity: 1;
   color: #9356dc;
+  cursor: pointer;
 }
 .restaurants .group .card-1 .text a,
 .restaurants .group .card-2 .text a,
