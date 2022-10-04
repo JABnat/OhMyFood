@@ -91,7 +91,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 6% 0 6%;
+    padding: 0 6% 3% 6%;
     .title {
       h1 {
         font-size: 1.5em;
@@ -116,6 +116,7 @@ body {
       padding: 4% 0;
       border-radius: 60px;
       text-decoration: none;
+      cursor: pointer;
       & a {
         color: white;
         text-decoration: none;
@@ -124,7 +125,7 @@ body {
     }
     .button:hover {
       opacity: 0.8;
-      cursor: pointer;
+      box-shadow: $box-shadow;
     }
   }
 }
@@ -252,23 +253,22 @@ body {
         }
         .heart {
           position: relative;
+          cursor: pointer;
           .fa-solid {
             position: absolute;
             top: 18px;
             left: 0px;
             margin-top: -10px;
-            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
           }
           .fa-solid:hover {
-            visibility: visible;
-            opacity: 1;
-            cursor: pointer;
-          }
-          .fa-solid:active {
-            visibility: visible;
             opacity: 1;
             color: $primary-color;
-            cursor: pointer;
+          }
+          .fa-solid:active {
+            opacity: 1;
+            color: $primary-color;
           }
         }
       }
@@ -330,7 +330,22 @@ body {
   .body {
     margin: 0 auto;
   }
+  .nav {
+    .logo-border {
+      .logo {
+        .logo-png {
+          padding: 1%;
+        }
+      }
+    }
+    .city {
+      .group {
+        padding: 1% 0;
+      }
+    }
+  }
   .header {
+    padding: 5%;
     .btn {
       padding: 0 34%;
       .button {
@@ -350,14 +365,14 @@ body {
       display: flex;
       flex-wrap: nowrap;
       gap: 1.5em;
-      padding: 0 2%;
+      padding: 0 10%;
     }
     .card-1,
     .card-2,
     .card-3,
     .card-4 {
       .text {
-        padding-left: 0.6em;
+        padding-left: 3em;
       }
     }
   }
@@ -366,6 +381,11 @@ body {
       margin: 0 0 5% 5%;
     }
     .group {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2%;
+      align-content: center;
+      padding: 0 4%;
       .card-1,
       .card-2,
       .card-3,
