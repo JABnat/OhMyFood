@@ -12,6 +12,10 @@ body {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
+body .intro-pic .background {
+  height: 20em;
+  object-fit: cover;
+}
 body header .nav {
   text-align: center;
 }
@@ -19,13 +23,13 @@ body header .nav .logo-border {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
   align-items: center;
   gap: 3em;
+  padding: 2%;
+  justify-content: center;
 }
 body header .nav .logo-border .back {
   color: black;
-  padding: 1em;
 }
 body header .nav .logo-border .logo .logo-png {
   width: 11em;
@@ -37,19 +41,43 @@ body .content {
   margin-top: -26px;
   z-index: 2;
 }
-body .title-group {
+body .content .title-group {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.2em 0 1.2em;
+  padding: 1em 4em;
 }
-body .title-group h2 {
+body .content .title-group h2 {
   font-family: "Shrikhand", "cursive";
 }
-body .title-group h2 i {
+body .content .title-group h2 i {
   color: #353535;
+}
+body .content .title-group .heart {
+  position: relative;
+  cursor: pointer;
+}
+body .content .title-group .heart .fa-solid {
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  margin-top: -10px;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+body .content .title-group .heart .fa-solid:hover {
+  opacity: 1;
+  color: #9356dc;
+}
+body .content .title-group .heart .fa-solid:active {
+  opacity: 1;
+  color: #9356dc;
+}
+body .content .columns {
+  display: flex;
+  justify-content: space-evenly;
 }
 body .text-group {
   font-family: "Roboto", "sans-serif";
@@ -63,6 +91,7 @@ body .text-group .underline {
   border: 2px solid #99e2d0;
   width: 40px;
   margin-top: 5px;
+  background-color: #99e2d0;
 }
 body .cards .card-1,
 body .cards .card-2,
@@ -105,12 +134,14 @@ body .btn {
   padding: 2em 5em 3em 5em;
   text-align: center;
   font-family: "Roboto", "sans-serif";
+  display: flex;
+  justify-content: space-around;
 }
 body .btn .button {
   color: white;
   background-color: #9356dc;
   border: 1px solid #9356dc;
-  padding: 4% 0;
+  padding: 2% 6%;
   border-radius: 60px;
   text-decoration: none;
 }
@@ -118,6 +149,10 @@ body .btn .button a {
   color: white;
   text-decoration: none;
   font-size: 1em;
+}
+body .button:hover {
+  box-shadow: 5px 5px 18px #afafaf;
+  cursor: pointer;
 }
 body .footer {
   background-color: #353535;
@@ -160,6 +195,21 @@ body .footer .footer-group .group .link {
   text-decoration: none;
   color: white;
   padding-bottom: 10px;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .content .columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .title-group {
+    padding: 1em 1.2em;
+  }
+}
+@media all and (max-width: 768px) {
+  .content .columns {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */

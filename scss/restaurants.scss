@@ -8,6 +8,12 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: nowrap;
+  .intro-pic {
+    .background {
+      height: 20em;
+      object-fit: cover;
+    }
+  }
   header {
     .nav {
       text-align: center;
@@ -15,12 +21,12 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-start;
         align-items: center;
         gap: 3em;
+        padding: 2%;
+        justify-content: center;
         .back {
           color: black;
-          padding: 1em;
         }
         .logo {
           .logo-png {
@@ -37,19 +43,43 @@ body {
     background-color: $grey-background;
     margin-top: -26px;
     z-index: 2;
-  }
-  .title-group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.2em 0 1.2em;
-    & h2 {
-      font-family: $secondary-font;
-      & i {
-        color: $not-quite-black;
+    .title-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 4em;
+      & h2 {
+        font-family: $secondary-font;
+        & i {
+          color: $not-quite-black;
+        }
       }
+      .heart {
+        position: relative;
+        cursor: pointer;
+        .fa-solid {
+          position: absolute;
+          top: 18px;
+          left: 0px;
+          margin-top: -10px;
+          opacity: 0;
+          transition: opacity 0.2s ease-out;
+        }
+        .fa-solid:hover {
+          opacity: 1;
+          color: $primary-color;
+        }
+        .fa-solid:active {
+          opacity: 1;
+          color: $primary-color;
+        }
+      }
+    }
+    .columns {
+      display: flex;
+      justify-content: space-evenly;
     }
   }
   .text-group {
@@ -63,6 +93,7 @@ body {
       border: 2px solid $tertiary-color;
       width: 40px;
       margin-top: 5px;
+      background-color: $tertiary-color;
     }
   }
   .cards {
@@ -105,11 +136,13 @@ body {
     padding: 2em 5em 3em 5em;
     text-align: center;
     font-family: $primary-font;
+    display: flex;
+    justify-content: space-around;
     .button {
       color: white;
       background-color: #9356dc;
       border: 1px solid #9356dc;
-      padding: 4% 0;
+      padding: 2% 6%;
       border-radius: 60px;
       text-decoration: none;
       & a {
@@ -119,7 +152,10 @@ body {
       }
     }
   }
-
+  .button:hover {
+    box-shadow: $box-shadow;
+    cursor: pointer;
+  }
   .footer {
     background-color: $not-quite-black;
     color: white;
@@ -163,3 +199,25 @@ body {
     }
   }
 }
+
+// MEDIA QUERIES //
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .content {
+    .columns {
+      display: flex;
+      flex-direction: column;
+    }
+    .title-group {
+      padding: 1em 1.2em;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .content {
+    .columns {
+      flex-direction: column;
+    }
+  }
+}
+// MEDIA QUERIES //
