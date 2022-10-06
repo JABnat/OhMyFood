@@ -108,6 +108,8 @@ body {
       box-shadow: $box-shadow;
       margin-bottom: 5%;
       padding: 1em;
+      animation: appear 3s forwards;
+      animation: rise 3s forwards;
       & p {
         font-weight: 100;
         margin: 0;
@@ -125,6 +127,23 @@ body {
       padding: 0.4em 5% 0 0;
       justify-content: space-between;
       font-size: smaller;
+    }
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0px);
     }
   }
   img {
