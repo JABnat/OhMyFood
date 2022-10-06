@@ -104,7 +104,7 @@ body {
       border-radius: 20px;
       width: 90%;
       display: flex;
-      flex-wrap: wrap;
+      //flex-wrap: wrap;
       box-shadow: $box-shadow;
       margin-bottom: 5%;
       padding: 1em;
@@ -119,14 +119,13 @@ body {
       }
     }
     .text-icon {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      align-items: center;
       width: 100%;
       padding: 0.4em 5% 0 0;
-      justify-content: space-between;
       font-size: smaller;
+    }
+    .price {
+      display: flex;
+      align-items: flex-end;
     }
   }
   @keyframes appear {
