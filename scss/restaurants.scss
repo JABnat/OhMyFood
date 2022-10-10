@@ -83,7 +83,7 @@ body {
   }
   .text-group {
     font-family: $primary-font;
-    margin: 2em;
+    margin: 0 2em;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -113,6 +113,9 @@ body {
       overflow: hidden;
       & :hover .check {
         margin-right: 0;
+        .fa-solid {
+          animation: spin 1.5s ease-in-out 1;
+        }
       }
       & p {
         font-weight: 100;
@@ -151,11 +154,11 @@ body {
         align-items: center;
         background-color: $tertiary-color;
         height: 100%;
-        width: 200px;
+        width: 125px;
         border-radius: 0 20px 20px 0;
         display: flex;
         justify-content: center;
-        margin-right: -200px;
+        margin-right: -125px;
         transition: margin 1.5s ease-in-out;
         & .fa-solid {
           color: white;
@@ -165,24 +168,24 @@ body {
         padding-bottom: 0.5em;
         padding-right: 0.5em;
       }
-      & :hover .check {
-        margin-right: 0;
-        animation: spin 5s;
-      }
     }
     @keyframes spin {
       0% {
-        margin-left: 100%;
-        width: 300%;
-        transform: rotate(0deg);
+        transform: rotate(360deg);
       }
       100% {
-        margin-left: 0%;
-        width: 100%;
-        transform: rotate(360deg);
+        transform: rotate(0deg);
       }
     }
   }
+
+  .card-1:hover,
+  .card-2:hover,
+  .card-3:hover {
+    box-shadow: 5px 5px 30px;
+    cursor: pointer;
+  }
+
   @keyframes appear {
     from {
       opacity: 0;
@@ -206,68 +209,71 @@ body {
   }
 
   .btn {
-    padding: 2em 5em 3em 5em;
     text-align: center;
     font-family: $primary-font;
-    display: flex;
-    justify-content: space-around;
+    padding: 4% 25%;
     .button {
       color: white;
-      background-color: #9356dc;
-      border: 1px solid #9356dc;
-      padding: 2% 6%;
+      background: linear-gradient(#ff79da, #9356dc);
+      padding: 4% 0;
       border-radius: 60px;
       text-decoration: none;
+      cursor: pointer;
       & a {
         color: white;
         text-decoration: none;
         font-size: 1em;
       }
     }
+    .button:hover {
+      opacity: 0.8;
+      box-shadow: $box-shadow;
+    }
   }
-  .button:hover {
-    box-shadow: $box-shadow;
-    cursor: pointer;
-  }
-  .footer {
-    background-color: $not-quite-black;
-    color: white;
-    text-decoration: none;
-    margin-top: 0;
-    .footer-group {
-      padding: 1.25em;
-      & h3 {
-        font-size: 1.1em;
-        font-weight: 100;
-        margin-top: 0;
-        font-family: $secondary-font;
-      }
-      .group {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        font-family: $primary-font;
-        .icon {
-          padding-bottom: 10px;
-          & a {
-            text-decoration: none;
-            color: white;
-            & i {
-              color: white;
-              padding-bottom: 10px;
-            }
-            & span {
-              padding-left: 8px;
-            }
-          }
-        }
-        .link {
+}
+
+.button:hover {
+  box-shadow: $box-shadow;
+  cursor: pointer;
+}
+.footer {
+  background-color: $not-quite-black;
+  color: white;
+  text-decoration: none;
+  margin-top: 0;
+  .footer-group {
+    padding: 1.25em;
+    & h3 {
+      font-size: 1.1em;
+      font-weight: 100;
+      margin-top: 0;
+      font-family: $secondary-font;
+    }
+    .group {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      font-family: $primary-font;
+      .icon {
+        padding-bottom: 10px;
+        & a {
           text-decoration: none;
           color: white;
-          padding-bottom: 10px;
+          & i {
+            color: white;
+            padding-bottom: 10px;
+          }
+          & span {
+            padding-left: 8px;
+          }
         }
+      }
+      .link {
+        text-decoration: none;
+        color: white;
+        padding-bottom: 10px;
       }
     }
   }
