@@ -78,7 +78,6 @@ body {
       }
     }
     .columns {
-      display: flex;
       justify-content: space-evenly;
     }
   }
@@ -104,28 +103,81 @@ body {
       border-radius: 20px;
       width: 90%;
       display: flex;
-      //flex-wrap: wrap;
       box-shadow: $box-shadow;
       margin-bottom: 5%;
-      padding: 1em;
       animation: appear 3s forwards;
       animation: rise 3s forwards;
+      overflow: hidden;
+      & :hover .check {
+        margin-right: 0;
+      }
       & p {
         font-weight: 100;
         margin: 0;
+        margin-bottom: 10px;
+        font-size: larger;
       }
       & strong {
         font-weight: 500;
       }
     }
     .text-icon {
+      padding: 1em;
       width: 100%;
-      padding: 0.4em 5% 0 0;
-      font-size: smaller;
+      font-size: larger;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      align-content: center;
+      align-items: left;
+      justify-content: space-between;
     }
+
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
     .price {
       display: flex;
       align-items: flex-end;
+      font-size: larger;
+      .check {
+        align-items: center;
+        background-color: $tertiary-color;
+        height: 100%;
+        width: 200px;
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        justify-content: center;
+        margin-right: -200px;
+        transition: margin 1.5s ease-in-out;
+        & .fa-solid {
+          color: white;
+        }
+      }
+      p {
+        padding-bottom: 0.5em;
+        padding-right: 0.5em;
+      }
+      & :hover .check {
+        margin-right: 0;
+        animation: spin 5s;
+      }
+    }
+    @keyframes spin {
+      0% {
+        margin-left: 100%;
+        width: 300%;
+        transform: rotate(0deg);
+      }
+      100% {
+        margin-left: 0%;
+        width: 100%;
+        transform: rotate(360deg);
+      }
     }
   }
   @keyframes appear {
@@ -235,6 +287,9 @@ body {
   .content {
     .columns {
       flex-direction: column;
+      .text-group {
+        align-self: center;
+      }
     }
   }
 }

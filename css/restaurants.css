@@ -76,7 +76,6 @@ body .content .title-group .heart .fa-solid:active {
   color: #9356dc;
 }
 body .content .columns {
-  display: flex;
   justify-content: space-evenly;
 }
 body .text-group {
@@ -102,15 +101,22 @@ body .cards .card-3 {
   display: flex;
   box-shadow: 5px 5px 18px #afafaf;
   margin-bottom: 5%;
-  padding: 1em;
   animation: appear 3s forwards;
   animation: rise 3s forwards;
+  overflow: hidden;
+}
+body .cards .card-1 :hover .check,
+body .cards .card-2 :hover .check,
+body .cards .card-3 :hover .check {
+  margin-right: 0;
 }
 body .cards .card-1 p,
 body .cards .card-2 p,
 body .cards .card-3 p {
   font-weight: 100;
   margin: 0;
+  margin-bottom: 10px;
+  font-size: larger;
 }
 body .cards .card-1 strong,
 body .cards .card-2 strong,
@@ -118,13 +124,60 @@ body .cards .card-3 strong {
   font-weight: 500;
 }
 body .cards .text-icon {
+  padding: 1em;
   width: 100%;
-  padding: 0.4em 5% 0 0;
-  font-size: smaller;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-content: center;
+  align-items: left;
+  justify-content: space-between;
+}
+body .cards p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 body .cards .price {
   display: flex;
   align-items: flex-end;
+  font-size: larger;
+}
+body .cards .price .check {
+  align-items: center;
+  background-color: #99e2d0;
+  height: 100%;
+  width: 200px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  margin-right: -200px;
+  transition: margin 1.5s ease-in-out;
+}
+body .cards .price .check .fa-solid {
+  color: white;
+}
+body .cards .price p {
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+}
+body .cards .price :hover .check {
+  margin-right: 0;
+  animation: spin 5s;
+}
+@keyframes spin {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+    transform: rotate(0deg);
+  }
+  100% {
+    margin-left: 0%;
+    width: 100%;
+    transform: rotate(360deg);
+  }
 }
 @keyframes appear {
   from {
@@ -225,6 +278,9 @@ body .footer .footer-group .group .link {
 @media all and (max-width: 768px) {
   .content .columns {
     flex-direction: column;
+  }
+  .content .columns .text-group {
+    align-self: center;
   }
 }
 
