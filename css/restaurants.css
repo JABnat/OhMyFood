@@ -80,7 +80,10 @@ body .content .columns {
 }
 body .text-group {
   font-family: "Roboto", "sans-serif";
-  padding: 0 1em 1em 1em;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
 }
 body .text-group h3 {
   font-weight: 300;
@@ -97,7 +100,7 @@ body .cards .card-2,
 body .cards .card-3 {
   background-color: white;
   border-radius: 20px;
-  width: 90%;
+  width: 100%;
   display: flex;
   box-shadow: 5px 5px 18px #afafaf;
   margin-bottom: 5%;
@@ -266,16 +269,29 @@ body .footer .footer-group .group .link {
   padding-bottom: 10px;
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .content .columns {
+@media all and (min-width: 992px) {
+  .content .text-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3em;
+    justify-content: center;
+  }
+  .content .text-group .text-grouping {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content .text-group .card-1,
+.content .text-group .card-2,
+.content .text-group .card-3 {
+    width: 27em;
   }
   .content .title-group {
     padding: 1em 1.2em;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
   .content .columns {
     flex-direction: column;
   }

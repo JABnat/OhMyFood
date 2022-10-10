@@ -83,7 +83,10 @@ body {
   }
   .text-group {
     font-family: $primary-font;
-    padding: 0 1em 1em 1em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
     & h3 {
       font-weight: 300;
       margin-bottom: 0;
@@ -101,7 +104,7 @@ body {
     .card-3 {
       background-color: white;
       border-radius: 20px;
-      width: 90%;
+      width: 100%;
       display: flex;
       box-shadow: $box-shadow;
       margin-bottom: 5%;
@@ -271,11 +274,24 @@ body {
 }
 
 // MEDIA QUERIES //
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 992px) {
   .content {
-    .columns {
+    .text-group {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 3em;
+      justify-content: center;
+      .text-grouping {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .card-1,
+      .card-2,
+      .card-3 {
+        width: 27em;
+      }
     }
     .title-group {
       padding: 1em 1.2em;
@@ -283,7 +299,7 @@ body {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
   .content {
     .columns {
       flex-direction: column;
