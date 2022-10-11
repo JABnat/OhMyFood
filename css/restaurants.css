@@ -24,12 +24,14 @@ body header .nav .logo-border {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 3em;
   padding: 2%;
-  justify-content: center;
 }
 body header .nav .logo-border .back {
   color: black;
+  position: absolute;
+}
+body header .nav .logo-border .logo-center {
+  width: 100%;
 }
 body header .nav .logo-border .logo .logo-png {
   width: 11em;
@@ -116,7 +118,8 @@ body .cards .card-3 :hover .check {
 body .cards .card-1 :hover .check .fa-solid,
 body .cards .card-2 :hover .check .fa-solid,
 body .cards .card-3 :hover .check .fa-solid {
-  animation: spin 1.5s ease-in-out 1;
+  animation: spin 0.3s ease-in-out 1;
+  animation-delay: 0.2s;
 }
 body .cards .card-1 p,
 body .cards .card-2 p,
@@ -162,7 +165,7 @@ body .cards .price .check {
   display: flex;
   justify-content: center;
   margin-right: -125px;
-  transition: margin 1.5s ease-in-out;
+  transition: margin 0.5s ease-in-out;
 }
 body .cards .price .check .fa-solid {
   color: white;
@@ -296,6 +299,9 @@ body .btn .button:hover {
   }
   .content .title-group {
     padding: 1em 1.2em;
+  }
+  .content .btn .button a {
+    font-size: 2em;
   }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
