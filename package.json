@@ -1,0 +1,22 @@
+{
+  "name": "jabury_natasha_project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-r": "echo 'Now Compiling your Restaurant Page' && sass --watch scss/restaurants.scss css/restaurants.css",
+    "compile-home": "echo 'Now Compiling your Home Page' && sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JABnat/OhMyFood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JABnat/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/JABnat/OhMyFood#readme"
+}

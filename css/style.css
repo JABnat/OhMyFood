@@ -30,6 +30,7 @@
   }
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes spin {
@@ -137,9 +138,15 @@ body {
   flex-direction: column;
   padding: 2% 0 2% 10%;
 }
-.fonctionnement .card-1,
-.fonctionnement .card-2,
-.fonctionnement .card-3 {
+.fonctionnement .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.fonctionnement .cards .card-1,
+.fonctionnement .cards .card-2,
+.fonctionnement .cards .card-3 {
   display: flex;
   border: 1px solid transparent;
   font-family: "Roboto", "sans-serif";
@@ -147,16 +154,15 @@ body {
   box-shadow: 5px 5px 18px #afafaf;
   border-radius: 25px;
   align-items: center;
-  margin: 0 0 30px 5%;
   background-color: #f6f6f6;
   width: 85%;
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.fonctionnement .card-1 .numberbubble,
-.fonctionnement .card-2 .numberbubble,
-.fonctionnement .card-3 .numberbubble {
+.fonctionnement .cards .card-1 .numberbubble,
+.fonctionnement .cards .card-2 .numberbubble,
+.fonctionnement .cards .card-3 .numberbubble {
   border-radius: 100%;
   height: 2%;
   width: 2%;
@@ -172,20 +178,16 @@ body {
   color: white;
   margin-left: -13px;
 }
-.fonctionnement .card-1 .numberbubble .number,
-.fonctionnement .card-2 .numberbubble .number,
-.fonctionnement .card-3 .numberbubble .number {
+.fonctionnement .cards .card-1 .numberbubble .number,
+.fonctionnement .cards .card-2 .numberbubble .number,
+.fonctionnement .cards .card-3 .numberbubble .number {
   font-size: 0.75em;
 }
-.fonctionnement .card-1 i,
-.fonctionnement .card-2 i,
-.fonctionnement .card-3 i {
+.fonctionnement .cards i {
   color: #afafaf;
   padding-left: 10%;
 }
-.fonctionnement .card-1 .text,
-.fonctionnement .card-2 .text,
-.fonctionnement .card-3 .text {
+.fonctionnement .cards .text {
   padding-left: 10%;
   font-size: 1em;
   font-weight: 500;
@@ -302,19 +304,37 @@ body {
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
-.restaurants .group .card-1 .text-layout .heart .fa-solid:hover,
-.restaurants .group .card-2 .text-layout .heart .fa-solid:hover,
-.restaurants .group .card-3 .text-layout .heart .fa-solid:hover,
-.restaurants .group .card-4 .text-layout .heart .fa-solid:hover {
+.restaurants .group .card-1 .text-layout .heart .fa-regular,
+.restaurants .group .card-2 .text-layout .heart .fa-regular,
+.restaurants .group .card-3 .text-layout .heart .fa-regular,
+.restaurants .group .card-4 .text-layout .heart .fa-regular {
+  transition: opacity 0.2s ease-out;
+}
+.restaurants .group .card-1 .text-layout .heart:hover .fa-solid,
+.restaurants .group .card-2 .text-layout .heart:hover .fa-solid,
+.restaurants .group .card-3 .text-layout .heart:hover .fa-solid,
+.restaurants .group .card-4 .text-layout .heart:hover .fa-solid {
   opacity: 1;
   color: #9356dc;
 }
-.restaurants .group .card-1 .text-layout .heart .fa-solid:active,
-.restaurants .group .card-2 .text-layout .heart .fa-solid:active,
-.restaurants .group .card-3 .text-layout .heart .fa-solid:active,
-.restaurants .group .card-4 .text-layout .heart .fa-solid:active {
+.restaurants .group .card-1 .text-layout .heart:active .fa-solid,
+.restaurants .group .card-2 .text-layout .heart:active .fa-solid,
+.restaurants .group .card-3 .text-layout .heart:active .fa-solid,
+.restaurants .group .card-4 .text-layout .heart:active .fa-solid {
   opacity: 1;
   color: #9356dc;
+}
+.restaurants .group .card-1 .text-layout .heart:hover .fa-regular,
+.restaurants .group .card-2 .text-layout .heart:hover .fa-regular,
+.restaurants .group .card-3 .text-layout .heart:hover .fa-regular,
+.restaurants .group .card-4 .text-layout .heart:hover .fa-regular {
+  opacity: 0;
+}
+.restaurants .group .card-1 .text-layout .heart:active .fa-regular,
+.restaurants .group .card-2 .text-layout .heart:active .fa-regular,
+.restaurants .group .card-3 .text-layout .heart:active .fa-regular,
+.restaurants .group .card-4 .text-layout .heart:active .fa-regular {
+  opacity: 0;
 }
 .restaurants .group .card-1 .text a,
 .restaurants .group .card-2 .text a,
@@ -397,7 +417,7 @@ body {
   .fonctionnement .cards {
     display: flex;
     flex-wrap: nowrap;
-    gap: 1.5em;
+    gap: 4.5em;
     padding: 0 5%;
   }
   .fonctionnement .card-1 .text,
@@ -446,7 +466,10 @@ body {
 .fonctionnement .card-2 .text,
 .fonctionnement .card-3 .text,
 .fonctionnement .card-4 .text {
-    padding-left: 0.6em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1em;
   }
 }
 

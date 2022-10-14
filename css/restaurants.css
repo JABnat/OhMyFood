@@ -16,24 +16,24 @@ body .intro-pic .background {
   height: 20em;
   object-fit: cover;
 }
-body header .nav {
+body header .r-nav {
   text-align: center;
 }
-body header .nav .logo-border {
+body header .r-nav .r-logo-border {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   padding: 2%;
 }
-body header .nav .logo-border .back {
+body header .r-nav .r-logo-border .back {
   color: black;
   position: absolute;
 }
-body header .nav .logo-border .logo-center {
+body header .r-nav .r-logo-border .r-logo-center {
   width: 100%;
 }
-body header .nav .logo-border .logo .logo-png {
+body header .r-nav .r-logo-border .r-logo .r-logo-png {
   width: 11em;
 }
 body .content {
@@ -69,23 +69,32 @@ body .content .title-group .heart .fa-solid {
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
-body .content .title-group .heart .fa-solid:hover {
+body .content .title-group .heart .fa-regular {
+  transition: opacity 0.2s ease-out;
+}
+body .content .title-group .heart:hover .fa-solid {
   opacity: 1;
   color: #9356dc;
 }
-body .content .title-group .heart .fa-solid:active {
+body .content .title-group .heart:active .fa-solid {
   opacity: 1;
   color: #9356dc;
+}
+body .content .title-group .heart:hover .fa-regular {
+  opacity: 0;
+}
+body .content .title-group .heart:active .fa-regular {
+  opacity: 0;
 }
 body .content .columns {
   justify-content: space-evenly;
 }
 body .text-group {
   font-family: "Roboto", "sans-serif";
-  margin: 0 2em;
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  margin: 0 5%;
 }
 body .text-group h3 {
   font-weight: 300;
@@ -97,47 +106,68 @@ body .text-group .underline {
   margin-top: 5px;
   background-color: #99e2d0;
 }
-body .cards .card-1,
-body .cards .card-2,
-body .cards .card-3 {
+body .text-grouping .r-card-1,
+body .text-grouping .r-card-2,
+body .text-grouping .r-card-3,
+body .text-grouping .r-card-4 {
+  animation: rise 3s forwards;
+  animation-delay: 2s;
   background-color: white;
   border-radius: 20px;
   width: 100%;
   display: flex;
   box-shadow: 5px 5px 18px #afafaf;
   margin-bottom: 5%;
-  animation: appear 3s forwards;
-  animation: rise 3s forwards;
   overflow: hidden;
+  opacity: 0;
 }
-body .cards .card-1 :hover .check,
-body .cards .card-2 :hover .check,
-body .cards .card-3 :hover .check {
+body .text-grouping .r-card-1:hover .check,
+body .text-grouping .r-card-2:hover .check,
+body .text-grouping .r-card-3:hover .check,
+body .text-grouping .r-card-4:hover .check {
   margin-right: 0;
 }
-body .cards .card-1 :hover .check .fa-solid,
-body .cards .card-2 :hover .check .fa-solid,
-body .cards .card-3 :hover .check .fa-solid {
+body .text-grouping .r-card-1:hover .check .fa-solid,
+body .text-grouping .r-card-2:hover .check .fa-solid,
+body .text-grouping .r-card-3:hover .check .fa-solid,
+body .text-grouping .r-card-4:hover .check .fa-solid {
   animation: spin 0.3s ease-in-out 1;
   animation-delay: 0.2s;
 }
-body .cards .card-1 p,
-body .cards .card-2 p,
-body .cards .card-3 p {
+body .text-grouping .r-card-1 p,
+body .text-grouping .r-card-2 p,
+body .text-grouping .r-card-3 p,
+body .text-grouping .r-card-4 p {
   font-weight: 100;
   margin: 0;
   margin-bottom: 10px;
-  font-size: larger;
+  font-size: normal;
 }
-body .cards .card-1 strong,
-body .cards .card-2 strong,
-body .cards .card-3 strong {
+body .text-grouping .r-card-1 strong,
+body .text-grouping .r-card-2 strong,
+body .text-grouping .r-card-3 strong,
+body .text-grouping .r-card-4 strong {
   font-weight: 500;
 }
-body .cards .text-icon {
-  padding: 1em;
+body .text-grouping .r-card-1 {
+  animation: rise 3s forwards;
+}
+body .text-grouping .r-card-2 {
+  animation: rise 3s forwards;
+  animation-delay: 1s;
+}
+body .text-grouping .r-card-3 {
+  animation: rise 3s forwards;
+  animation-delay: 2s;
+}
+body .text-grouping .r-card-4 {
+  animation: rise 3s forwards;
+  animation-delay: 3s;
+}
+body .text-grouping .text-icon {
+  padding: 1em 0 1em 1em;
   width: 100%;
-  font-size: larger;
+  font-size: normal;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -146,17 +176,17 @@ body .cards .text-icon {
   align-items: left;
   justify-content: space-between;
 }
-body .cards p {
+body .text-grouping p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-body .cards .price {
+body .text-grouping .price {
   display: flex;
   align-items: flex-end;
-  font-size: larger;
+  font-size: normal;
 }
-body .cards .price .check {
+body .text-grouping .price .check {
   align-items: center;
   background-color: #99e2d0;
   height: 100%;
@@ -167,53 +197,25 @@ body .cards .price .check {
   margin-right: -125px;
   transition: margin 0.5s ease-in-out;
 }
-body .cards .price .check .fa-solid {
+body .text-grouping .price .check .fa-solid {
   color: white;
 }
-body .cards .price p {
+body .text-grouping .price p {
   padding-bottom: 0.5em;
   padding-right: 0.5em;
 }
-@keyframes spin {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-body .card-1:hover,
-body .card-2:hover,
-body .card-3:hover {
+body .r-card-1:hover,
+body .r-card-2:hover,
+body .r-card-3:hover {
   box-shadow: 5px 5px 30px;
   cursor: pointer;
 }
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes rise {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-body img {
-  width: 100%;
-  z-index: 1;
-}
-body .btn {
+body .r-btn {
   text-align: center;
   font-family: "Roboto", "sans-serif";
   padding: 4% 25%;
 }
-body .btn .button {
+body .r-btn .r-button {
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
   padding: 4% 0;
@@ -221,17 +223,17 @@ body .btn .button {
   text-decoration: none;
   cursor: pointer;
 }
-body .btn .button a {
+body .r-btn .r-button a {
   color: white;
   text-decoration: none;
   font-size: 1em;
 }
-body .btn .button:hover {
+body .r-btn .r-button:hover {
   opacity: 0.8;
   box-shadow: 5px 5px 18px #afafaf;
 }
 
-.button:hover {
+.r-button:hover {
   box-shadow: 5px 5px 18px #afafaf;
   cursor: pointer;
 }
@@ -279,7 +281,30 @@ body .btn .button:hover {
   padding-bottom: 10px;
 }
 
-@media all and (min-width: 992px) {
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.intro-pic .background {
+  width: 100%;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media all and (min-width: 768px) {
   .content .text-group {
     display: flex;
     flex-direction: row;
@@ -291,6 +316,7 @@ body .btn .button:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 27%;
   }
   .content .text-group .card-1,
 .content .text-group .card-2,
@@ -300,16 +326,8 @@ body .btn .button:hover {
   .content .title-group {
     padding: 1em 1.2em;
   }
-  .content .btn .button a {
+  .content .r-btn .r-button a {
     font-size: 2em;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .content .columns {
-    flex-direction: column;
-  }
-  .content .columns .text-group {
-    align-self: center;
   }
 }
 

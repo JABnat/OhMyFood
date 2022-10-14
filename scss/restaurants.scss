@@ -1,5 +1,4 @@
 @import "./variables.scss";
-@import "./animations.scss";
 
 body {
   margin: 0;
@@ -16,9 +15,9 @@ body {
   }
 
   header {
-    .nav {
+    .r-nav {
       text-align: center;
-      .logo-border {
+      .r-logo-border {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -28,11 +27,11 @@ body {
           color: black;
           position: absolute;
         }
-        .logo-center {
+        .r-logo-center {
           width: 100%;
         }
-        .logo {
-          .logo-png {
+        .r-logo {
+          .r-logo-png {
             width: 11em;
           }
         }
@@ -70,13 +69,22 @@ body {
           opacity: 0;
           transition: opacity 0.2s ease-out;
         }
-        .fa-solid:hover {
+        .fa-regular {
+          transition: opacity 0.2s ease-out;
+        }
+        &:hover .fa-solid {
           opacity: 1;
           color: $primary-color;
         }
-        .fa-solid:active {
+        &:active .fa-solid {
           opacity: 1;
           color: $primary-color;
+        }
+        &:hover .fa-regular {
+          opacity: 0;
+        }
+        &:active .fa-regular {
+          opacity: 0;
         }
       }
     }
@@ -87,10 +95,10 @@ body {
 
   .text-group {
     font-family: $primary-font;
-    margin: 0 2em;
     display: flex;
     flex-direction: column;
     align-content: space-around;
+    margin: 0 5%;
     & h3 {
       font-weight: 300;
       margin-bottom: 0;
@@ -103,20 +111,22 @@ body {
     }
   }
 
-  .cards {
-    .card-1,
-    .card-2,
-    .card-3 {
+  .text-grouping {
+    .r-card-1,
+    .r-card-2,
+    .r-card-3,
+    .r-card-4 {
+      animation: rise 3s forwards;
+      animation-delay: 2s;
       background-color: white;
       border-radius: 20px;
       width: 100%;
       display: flex;
       box-shadow: $box-shadow;
       margin-bottom: 5%;
-      animation: appear 3s forwards;
-      animation: rise 3s forwards;
       overflow: hidden;
-      & :hover .check {
+      opacity: 0;
+      &:hover .check {
         margin-right: 0;
         .fa-solid {
           animation: spin 0.3s ease-in-out 1;
@@ -127,17 +137,31 @@ body {
         font-weight: 100;
         margin: 0;
         margin-bottom: 10px;
-        font-size: larger;
+        font-size: normal;
       }
       & strong {
         font-weight: 500;
       }
     }
-
+    .r-card-1 {
+      animation: rise 3s forwards;
+    }
+    .r-card-2 {
+      animation: rise 3s forwards;
+      animation-delay: 1s;
+    }
+    .r-card-3 {
+      animation: rise 3s forwards;
+      animation-delay: 2s;
+    }
+    .r-card-4 {
+      animation: rise 3s forwards;
+      animation-delay: 3s;
+    }
     .text-icon {
-      padding: 1em;
+      padding: 1em 0 1em 1em;
       width: 100%;
-      font-size: larger;
+      font-size: normal;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -155,7 +179,7 @@ body {
     .price {
       display: flex;
       align-items: flex-end;
-      font-size: larger;
+      font-size: normal;
       .check {
         align-items: center;
         background-color: $tertiary-color;
@@ -175,51 +199,20 @@ body {
         padding-right: 0.5em;
       }
     }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(360deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
   }
 
-  .card-1:hover,
-  .card-2:hover,
-  .card-3:hover {
+  .r-card-1:hover,
+  .r-card-2:hover,
+  .r-card-3:hover {
     box-shadow: 5px 5px 30px;
     cursor: pointer;
   }
 
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes rise {
-    0% {
-      transform: translateY(20px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  img {
-    width: 100%;
-    z-index: 1;
-  }
-
-  .btn {
+  .r-btn {
     text-align: center;
     font-family: $primary-font;
     padding: 4% 25%;
-    .button {
+    .r-button {
       color: white;
       background: linear-gradient(#ff79da, #9356dc);
       padding: 4% 0;
@@ -232,14 +225,14 @@ body {
         font-size: 1em;
       }
     }
-    .button:hover {
+    .r-button:hover {
       opacity: 0.8;
       box-shadow: $box-shadow;
     }
   }
 }
 
-.button:hover {
+.r-button:hover {
   box-shadow: $box-shadow;
   cursor: pointer;
 }
@@ -285,10 +278,40 @@ body {
     }
   }
 }
+//ANIMATIONS//
+//cascading cards//
+
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.intro-pic {
+  .background {
+    width: 100%;
+    z-index: 1;
+  }
+}
+//cascading cards//
+//rotating checks//
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+//rotating checks//
 
 // MEDIA QUERIES //
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
   .content {
     .text-group {
       display: flex;
@@ -300,6 +323,7 @@ body {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        width: 27%;
       }
       .card-1,
       .card-2,
@@ -310,22 +334,11 @@ body {
     .title-group {
       padding: 1em 1.2em;
     }
-    .btn {
-      .button {
+    .r-btn {
+      .r-button {
         & a {
           font-size: 2em;
         }
-      }
-    }
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .content {
-    .columns {
-      flex-direction: column;
-      .text-group {
-        align-self: center;
       }
     }
   }
