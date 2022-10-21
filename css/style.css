@@ -128,7 +128,7 @@ body {
 .fonctionnement {
   text-align: center;
   padding-bottom: 10%;
-  text-align: -webkit-center;
+  text-align: center;
 }
 .fonctionnement h3 {
   text-align-last: left;
@@ -138,15 +138,15 @@ body {
   flex-direction: column;
   padding: 2% 0 2% 10%;
 }
-.fonctionnement .cards {
+.fonctionnement .f-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
 }
-.fonctionnement .cards .card-1,
-.fonctionnement .cards .card-2,
-.fonctionnement .cards .card-3 {
+.fonctionnement .f-cards .f-card-1,
+.fonctionnement .f-cards .f-card-2,
+.fonctionnement .f-cards .f-card-3 {
   display: flex;
   border: 1px solid transparent;
   font-family: "Roboto", "sans-serif";
@@ -160,14 +160,12 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
 }
-.fonctionnement .cards .card-1 .numberbubble,
-.fonctionnement .cards .card-2 .numberbubble,
-.fonctionnement .cards .card-3 .numberbubble {
+.fonctionnement .f-cards .f-card-1 .numberbubble,
+.fonctionnement .f-cards .f-card-2 .numberbubble,
+.fonctionnement .f-cards .f-card-3 .numberbubble {
   border-radius: 100%;
-  height: 2%;
-  width: 2%;
-  min-height: 1.5em;
-  min-width: 1.5em;
+  min-height: 2.5em;
+  min-width: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,31 +175,42 @@ body {
   font-weight: bold;
   color: white;
   margin-left: -13px;
+  position: absolute;
 }
-.fonctionnement .cards .card-1 .numberbubble .number,
-.fonctionnement .cards .card-2 .numberbubble .number,
-.fonctionnement .cards .card-3 .numberbubble .number {
+.fonctionnement .f-cards .f-card-1 .numberbubble .number,
+.fonctionnement .f-cards .f-card-2 .numberbubble .number,
+.fonctionnement .f-cards .f-card-3 .numberbubble .number {
   font-size: 0.75em;
 }
-.fonctionnement .cards i {
+.fonctionnement .f-cards .bundle {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  place-content: center;
+  padding-right: 10%;
+}
+.fonctionnement .f-cards .bundle i {
   color: #afafaf;
   padding-left: 10%;
 }
-.fonctionnement .cards .text {
+.fonctionnement .f-cards .bundle .text {
   padding-left: 10%;
   font-size: 1em;
   font-weight: 500;
+  text-align: center;
 }
-
-.card-1:hover,
-.card-2:hover,
-.card-3:hover {
-  box-shadow: 5px 5px 30px;
+.fonctionnement .f-card-1:hover,
+.fonctionnement .f-card-2:hover,
+.fonctionnement .f-card-3:hover {
+  box-shadow: 5px 5px 30px #afafaf;
+  background-color: white;
   cursor: pointer;
 }
-.card-1:hover .fa-solid,
-.card-2:hover .fa-solid,
-.card-3:hover .fa-solid {
+.fonctionnement .f-card-1:hover .fa-solid,
+.fonctionnement .f-card-2:hover .fa-solid,
+.fonctionnement .f-card-3:hover .fa-solid {
   color: #9356dc;
 }
 
@@ -342,6 +351,12 @@ body {
 .restaurants .group .card-4 .text a {
   color: black;
 }
+.restaurants .group .card-1:hover,
+.restaurants .group .card-2:hover,
+.restaurants .group .card-3:hover,
+.restaurants .group .card-4:hover {
+  box-shadow: 5px 5px 30px #afafaf;
+}
 
 .footer {
   background-color: #353535;
@@ -414,16 +429,16 @@ body {
   .fonctionnement h3 {
     padding: 2% 0 2% 6%;
   }
-  .fonctionnement .cards {
+  .fonctionnement .f-cards {
     display: flex;
     flex-wrap: nowrap;
     gap: 4.5em;
     padding: 0 5%;
   }
-  .fonctionnement .card-1 .text,
-.fonctionnement .card-2 .text,
-.fonctionnement .card-3 .text,
-.fonctionnement .card-4 .text {
+  .fonctionnement .f-card-1 .text,
+.fonctionnement .f-card-2 .text,
+.fonctionnement .f-card-3 .text,
+.fonctionnement .f-card-4 .text {
     padding-left: 6%;
   }
   .restaurants h3 {
@@ -456,16 +471,16 @@ body {
   .fonctionnement h3 {
     padding: 2% 0 2% 6%;
   }
-  .fonctionnement .cards {
+  .fonctionnement .f-cards {
     display: flex;
     flex-wrap: nowrap;
     gap: 1.5em;
     padding: 0 2%;
   }
-  .fonctionnement .card-1 .text,
-.fonctionnement .card-2 .text,
-.fonctionnement .card-3 .text,
-.fonctionnement .card-4 .text {
+  .fonctionnement .f-card-1 .text,
+.fonctionnement .f-card-2 .text,
+.fonctionnement .f-card-3 .text,
+.fonctionnement .f-card-4 .text {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

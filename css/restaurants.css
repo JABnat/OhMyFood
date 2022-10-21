@@ -330,5 +330,10 @@ body .r-btn .r-button:hover {
     font-size: 2em;
   }
 }
+@media all and (max-width: 768px) {
+  .title-group {
+    padding: 1em 1em;
+  }
+}
 
 /*# sourceMappingURL=restaurants.css.map */

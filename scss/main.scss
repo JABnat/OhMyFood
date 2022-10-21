@@ -110,7 +110,7 @@ body {
     padding: 0 12%;
     .button {
       color: white;
-      background: linear-gradient(#ff79da, #9356dc);
+      background: linear-gradient($secondary-color, $primary-color);
       padding: 4% 0;
       border-radius: 60px;
       text-decoration: none;
@@ -131,7 +131,7 @@ body {
 .fonctionnement {
   text-align: center;
   padding-bottom: 10%;
-  text-align: -webkit-center;
+  text-align: center;
   h3 {
     text-align-last: left;
     font-family: $primary-font;
@@ -140,32 +140,30 @@ body {
     flex-direction: column;
     padding: 2% 0 2% 10%;
   }
-  .cards {
+  .f-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
-    .card-1,
-    .card-2,
-    .card-3 {
+    .f-card-1,
+    .f-card-2,
+    .f-card-3 {
       display: flex;
       border: 1px solid transparent;
       font-family: "Roboto", "sans-serif";
       padding: 20px 0px 20px 0px;
-      box-shadow: 5px 5px 18px #afafaf;
+      box-shadow: $box-shadow;
       border-radius: 25px;
       align-items: center;
-      background-color: #f6f6f6;
+      background-color: $grey-background;
       width: 85%;
       justify-content: flex-start;
       flex-wrap: wrap;
       flex-direction: row;
       .numberbubble {
         border-radius: 100%;
-        height: 2%;
-        width: 2%;
-        min-height: 1.5em;
-        min-width: 1.5em;
+        min-height: 2.5em;
+        min-width: 2.5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -175,30 +173,42 @@ body {
         font-weight: bold;
         color: white;
         margin-left: -13px;
+        position: absolute;
         .number {
           font-size: 0.75em;
         }
       }
     }
-    & i {
-      color: $grey-font;
-      padding-left: 10%;
-    }
-    .text {
-      padding-left: 10%;
-      font-size: 1em;
-      font-weight: 500;
+    .bundle {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      place-content: center;
+      padding-right: 10%;
+      & i {
+        color: $grey-font;
+        padding-left: 10%;
+      }
+      .text {
+        padding-left: 10%;
+        font-size: 1em;
+        font-weight: 500;
+        text-align: center;
+      }
     }
   }
-}
 
-.card-1:hover,
-.card-2:hover,
-.card-3:hover {
-  box-shadow: 5px 5px 30px;
-  cursor: pointer;
-  .fa-solid {
-    color: $primary-color;
+  .f-card-1:hover,
+  .f-card-2:hover,
+  .f-card-3:hover {
+    box-shadow: $darker-box-shadow;
+    background-color: white;
+    cursor: pointer;
+    .fa-solid {
+      color: $primary-color;
+    }
   }
 }
 
@@ -301,6 +311,12 @@ body {
         }
       }
     }
+    .card-1:hover,
+    .card-2:hover,
+    .card-3:hover,
+    .card-4:hover {
+      box-shadow: $darker-box-shadow;
+    }
   }
 }
 
@@ -384,16 +400,16 @@ body {
     & h3 {
       padding: 2% 0 2% 6%;
     }
-    .cards {
+    .f-cards {
       display: flex;
       flex-wrap: nowrap;
       gap: 4.5em;
       padding: 0 5%;
     }
-    .card-1,
-    .card-2,
-    .card-3,
-    .card-4 {
+    .f-card-1,
+    .f-card-2,
+    .f-card-3,
+    .f-card-4 {
       .text {
         padding-left: 6%;
       }
@@ -426,8 +442,6 @@ body {
   .header {
     .btn {
       padding: 0 34%;
-      .button {
-      }
     }
   }
   .fonctionnement {
@@ -435,16 +449,16 @@ body {
     & h3 {
       padding: 2% 0 2% 6%;
     }
-    .cards {
+    .f-cards {
       display: flex;
       flex-wrap: nowrap;
       gap: 1.5em;
       padding: 0 2%;
     }
-    .card-1,
-    .card-2,
-    .card-3,
-    .card-4 {
+    .f-card-1,
+    .f-card-2,
+    .f-card-3,
+    .f-card-4 {
       .text {
         display: flex;
         flex-wrap: wrap;
