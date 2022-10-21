@@ -410,8 +410,11 @@ body {
     .f-card-2,
     .f-card-3,
     .f-card-4 {
-      .text {
-        padding-left: 6%;
+      .bundle {
+        padding-right: 0;
+        .text {
+          padding-left: 6%;
+        }
       }
     }
   }
@@ -459,11 +462,23 @@ body {
     .f-card-2,
     .f-card-3,
     .f-card-4 {
-      .text {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding: 1em;
+      .bundle {
+        .text {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          padding-left: 4%;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 870px) {
+  .fonctionnement {
+    .f-cards {
+      .bundle {
+        padding-right: 0;
       }
     }
   }

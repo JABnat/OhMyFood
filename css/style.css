@@ -435,10 +435,16 @@ body {
     gap: 4.5em;
     padding: 0 5%;
   }
-  .fonctionnement .f-card-1 .text,
-.fonctionnement .f-card-2 .text,
-.fonctionnement .f-card-3 .text,
-.fonctionnement .f-card-4 .text {
+  .fonctionnement .f-card-1 .bundle,
+.fonctionnement .f-card-2 .bundle,
+.fonctionnement .f-card-3 .bundle,
+.fonctionnement .f-card-4 .bundle {
+    padding-right: 0;
+  }
+  .fonctionnement .f-card-1 .bundle .text,
+.fonctionnement .f-card-2 .bundle .text,
+.fonctionnement .f-card-3 .bundle .text,
+.fonctionnement .f-card-4 .bundle .text {
     padding-left: 6%;
   }
   .restaurants h3 {
@@ -477,14 +483,19 @@ body {
     gap: 1.5em;
     padding: 0 2%;
   }
-  .fonctionnement .f-card-1 .text,
-.fonctionnement .f-card-2 .text,
-.fonctionnement .f-card-3 .text,
-.fonctionnement .f-card-4 .text {
+  .fonctionnement .f-card-1 .bundle .text,
+.fonctionnement .f-card-2 .bundle .text,
+.fonctionnement .f-card-3 .bundle .text,
+.fonctionnement .f-card-4 .bundle .text {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 1em;
+    padding-left: 4%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 870px) {
+  .fonctionnement .f-cards .bundle {
+    padding-right: 0;
   }
 }
 
