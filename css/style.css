@@ -164,8 +164,8 @@ body {
 .fonctionnement .f-cards .f-card-2 .numberbubble,
 .fonctionnement .f-cards .f-card-3 .numberbubble {
   border-radius: 100%;
-  min-height: 2.5em;
-  min-width: 2.5em;
+  min-height: 1.5em;
+  min-width: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
