@@ -18,7 +18,7 @@
 }
 .loading-page .loader {
   border: 16px solid lightgrey;
-  border-top: 16px solid blue;
+  border-top: 16px solid #ff79da;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -323,14 +323,14 @@ body {
 .restaurants .group .card-3 .text-layout .heart:hover .fa-solid,
 .restaurants .group .card-4 .text-layout .heart:hover .fa-solid {
   opacity: 1;
-  color: #9356dc;
+  color: radial-gradient(#ff79da, #9356dc);
 }
 .restaurants .group .card-1 .text-layout .heart:active .fa-solid,
 .restaurants .group .card-2 .text-layout .heart:active .fa-solid,
 .restaurants .group .card-3 .text-layout .heart:active .fa-solid,
 .restaurants .group .card-4 .text-layout .heart:active .fa-solid {
   opacity: 1;
-  color: #9356dc;
+  color: radial-gradient(#ff79da, #9356dc);
 }
 .restaurants .group .card-1 .text-layout .heart:hover .fa-regular,
 .restaurants .group .card-2 .text-layout .heart:hover .fa-regular,

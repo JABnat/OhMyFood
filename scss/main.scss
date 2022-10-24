@@ -13,7 +13,7 @@
   animation-delay: 3s;
   .loader {
     border: 16px solid lightgrey;
-    border-top: 16px solid blue;
+    border-top: 16px solid $secondary-color;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -289,11 +289,11 @@ body {
           }
           &:hover .fa-solid {
             opacity: 1;
-            color: $primary-color;
+            color: radial-gradient($secondary-color, $primary-color);
           }
           &:active .fa-solid {
             opacity: 1;
-            color: $primary-color;
+            color: radial-gradient($secondary-color, $primary-color);
           }
           &:hover .fa-regular {
             opacity: 0;
