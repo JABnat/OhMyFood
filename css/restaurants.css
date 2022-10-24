@@ -143,7 +143,7 @@ body .text-grouping .r-card-4 p {
   font-weight: 100;
   margin: 0;
   margin-bottom: 10px;
-  font-size: normal;
+  font-size: medium;
 }
 body .text-grouping .r-card-1 strong,
 body .text-grouping .r-card-2 strong,
@@ -169,13 +169,13 @@ body .text-grouping .r-card-4 {
 body .text-grouping .text-icon {
   padding: 1em 0 1em 1em;
   width: 100%;
-  font-size: normal;
+  font-size: medium;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
   align-content: center;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-between;
 }
 body .text-grouping p {
@@ -186,7 +186,7 @@ body .text-grouping p {
 body .text-grouping .price {
   display: flex;
   align-items: flex-end;
-  font-size: normal;
+  font-size: medium;
 }
 body .text-grouping .price .check {
   align-items: center;
