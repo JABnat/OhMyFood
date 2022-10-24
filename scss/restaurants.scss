@@ -11,9 +11,10 @@ body {
     .background {
       height: 20em;
       object-fit: cover;
+      width: 100%;
+      z-index: 1;
     }
   }
-
   header {
     .r-nav {
       text-align: center;
@@ -291,12 +292,7 @@ body {
     transform: translateY(0px);
   }
 }
-.intro-pic {
-  .background {
-    width: 100%;
-    z-index: 1;
-  }
-}
+
 //cascading cards//
 //rotating checks//
 @keyframes spin {
