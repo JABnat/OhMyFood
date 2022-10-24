@@ -185,8 +185,7 @@ body {
       flex-direction: row;
       width: 100%;
       align-items: center;
-      place-content: center;
-      padding-right: 10%;
+      padding-left: 5%;
       & i {
         color: $grey-font;
         padding-left: 10%;
@@ -463,22 +462,14 @@ body {
     .f-card-3,
     .f-card-4 {
       .bundle {
+        place-content: center;
+        padding-right: 10%;
         .text {
           display: flex;
           flex-wrap: wrap;
           flex-direction: row;
           padding-left: 4%;
         }
-      }
-    }
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 870px) {
-  .fonctionnement {
-    .f-cards {
-      .bundle {
-        padding-right: 0;
       }
     }
   }

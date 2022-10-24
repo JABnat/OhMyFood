@@ -188,8 +188,7 @@ body {
   flex-direction: row;
   width: 100%;
   align-items: center;
-  place-content: center;
-  padding-right: 10%;
+  padding-left: 5%;
 }
 .fonctionnement .f-cards .bundle i {
   color: #afafaf;
@@ -483,6 +482,13 @@ body {
     gap: 1.5em;
     padding: 0 2%;
   }
+  .fonctionnement .f-card-1 .bundle,
+.fonctionnement .f-card-2 .bundle,
+.fonctionnement .f-card-3 .bundle,
+.fonctionnement .f-card-4 .bundle {
+    place-content: center;
+    padding-right: 10%;
+  }
   .fonctionnement .f-card-1 .bundle .text,
 .fonctionnement .f-card-2 .bundle .text,
 .fonctionnement .f-card-3 .bundle .text,
@@ -491,11 +497,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     padding-left: 4%;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 870px) {
-  .fonctionnement .f-cards .bundle {
-    padding-right: 0;
   }
 }
 
