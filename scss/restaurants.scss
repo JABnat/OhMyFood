@@ -171,15 +171,15 @@ body {
       align-items: flex-start;
       justify-content: space-between;
       & p {
-        overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
     .price {
       display: flex;
       align-items: flex-end;
       font-size: medium;
+      padding-left: 10px;
       .check {
         align-items: center;
         background-color: $tertiary-color;
@@ -338,9 +338,5 @@ body {
     }
   }
 }
-@media all and (max-width: 768px) {
-  .title-group {
-    padding: 1em 1em;
-  }
-}
+
 // MEDIA QUERIES //

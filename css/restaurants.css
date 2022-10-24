@@ -179,14 +179,14 @@ body .text-grouping .text-icon {
   justify-content: space-between;
 }
 body .text-grouping .text-icon p {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  overflow: hidden;
 }
 body .text-grouping .price {
   display: flex;
   align-items: flex-end;
   font-size: medium;
+  padding-left: 10px;
 }
 body .text-grouping .price .check {
   align-items: center;
@@ -325,11 +325,6 @@ body .r-btn .r-button:hover {
   }
   .content .r-btn .r-button a {
     font-size: 2em;
-  }
-}
-@media all and (max-width: 768px) {
-  .title-group {
-    padding: 1em 1em;
   }
 }
 
