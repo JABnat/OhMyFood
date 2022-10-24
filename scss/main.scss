@@ -291,20 +291,25 @@ body {
         .heart {
           position: relative;
           cursor: pointer;
+          .fa-regular {
+            position: absolute;
+            font-size: 25px;
+            left: -16px;
+            margin-top: -10px;
+          }
           .fa-solid {
             position: absolute;
-            top: 18px;
-            left: 0px;
+            font-size: 25px;
+            left: -16px;
             margin-top: -10px;
             opacity: 0;
             transition: opacity 0.2s ease-out;
-            color: transparent;
-            background-clip: text;
-            background-image: linear-gradient(
-              to right top,
-              $secondary-color,
-              $primary-color
+            background: -webkit-linear-gradient(
+              $primary-color,
+              $secondary-color
             );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
           .fa-regular {
             transition: opacity 0.2s ease-out;

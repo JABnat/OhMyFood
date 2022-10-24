@@ -319,19 +319,28 @@ body {
   position: relative;
   cursor: pointer;
 }
+.restaurants .group .card-1 .text-layout .heart .fa-regular,
+.restaurants .group .card-2 .text-layout .heart .fa-regular,
+.restaurants .group .card-3 .text-layout .heart .fa-regular,
+.restaurants .group .card-4 .text-layout .heart .fa-regular {
+  position: absolute;
+  font-size: 25px;
+  left: -16px;
+  margin-top: -10px;
+}
 .restaurants .group .card-1 .text-layout .heart .fa-solid,
 .restaurants .group .card-2 .text-layout .heart .fa-solid,
 .restaurants .group .card-3 .text-layout .heart .fa-solid,
 .restaurants .group .card-4 .text-layout .heart .fa-solid {
   position: absolute;
-  top: 18px;
-  left: 0px;
+  font-size: 25px;
+  left: -16px;
   margin-top: -10px;
   opacity: 0;
   transition: opacity 0.2s ease-out;
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to right top, #ff79da, #9356dc);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurants .group .card-1 .text-layout .heart .fa-regular,
 .restaurants .group .card-2 .text-layout .heart .fa-regular,

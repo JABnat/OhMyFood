@@ -64,6 +64,7 @@ body {
         cursor: pointer;
         .fa-solid {
           position: absolute;
+          font-size: 25px;
           top: 18px;
           left: 0px;
           margin-top: -10px;
@@ -71,15 +72,23 @@ body {
           transition: opacity 0.2s ease-out;
         }
         .fa-regular {
+          position: absolute;
+          top: 18px;
+          left: 0px;
+          margin-top: -10px;
           transition: opacity 0.2s ease-out;
         }
         &:hover .fa-solid {
           opacity: 1;
-          color: $primary-color;
+          background: -webkit-linear-gradient($primary-color, $secondary-color);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         &:active .fa-solid {
           opacity: 1;
-          color: $primary-color;
+          background: -webkit-linear-gradient($primary-color, $secondary-color);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         &:hover .fa-regular {
           opacity: 0;
@@ -166,7 +175,6 @@ body {
       flex-wrap: nowrap;
       overflow: hidden;
       align-content: center;
-      align-items: flex-start;
       justify-content: space-between;
     }
     p {
