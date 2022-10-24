@@ -170,17 +170,16 @@ body .text-grouping .text-icon {
   padding: 1em 0 1em 1em;
   width: 100%;
   font-size: medium;
-  display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
   align-content: center;
   align-items: flex-start;
   justify-content: space-between;
 }
-body .text-grouping .text-icon p {
+body .text-grouping p {
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 body .text-grouping .price {
   display: flex;
@@ -206,18 +205,23 @@ body .text-grouping .price p {
   padding-bottom: 0.5em;
   padding-right: 0.5em;
 }
-body .r-card-1:hover,
-body .r-card-2:hover,
-body .r-card-3:hover {
+body .text-grouping .price:hover .check {
+  margin-right: 0;
+}
+
+.r-card-1:hover,
+.r-card-2:hover,
+.r-card-3:hover {
   box-shadow: 5px 5px 30px;
   cursor: pointer;
 }
-body .r-btn {
+
+.r-btn {
   text-align: center;
   font-family: "Roboto", "sans-serif";
   padding: 4% 25%;
 }
-body .r-btn .r-button {
+.r-btn .r-button {
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
   padding: 4% 0;
@@ -225,12 +229,12 @@ body .r-btn .r-button {
   text-decoration: none;
   cursor: pointer;
 }
-body .r-btn .r-button a {
+.r-btn .r-button a {
   color: white;
   text-decoration: none;
   font-size: 1em;
 }
-body .r-btn .r-button:hover {
+.r-btn .r-button:hover {
   opacity: 0.8;
   box-shadow: 5px 5px 18px #afafaf;
 }

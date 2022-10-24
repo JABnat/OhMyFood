@@ -163,18 +163,18 @@ body {
       padding: 1em 0 1em 1em;
       width: 100%;
       font-size: medium;
-      display: flex;
-      flex-direction: column;
       flex-wrap: nowrap;
       overflow: hidden;
       align-content: center;
       align-items: flex-start;
       justify-content: space-between;
-      & p {
-        white-space: nowrap;
-        overflow: hidden;
-      }
     }
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     .price {
       display: flex;
       align-items: flex-end;
@@ -198,37 +198,40 @@ body {
         padding-bottom: 0.5em;
         padding-right: 0.5em;
       }
-    }
-  }
-
-  .r-card-1:hover,
-  .r-card-2:hover,
-  .r-card-3:hover {
-    box-shadow: 5px 5px 30px;
-    cursor: pointer;
-  }
-
-  .r-btn {
-    text-align: center;
-    font-family: $primary-font;
-    padding: 4% 25%;
-    .r-button {
-      color: white;
-      background: linear-gradient($secondary-color, $primary-color);
-      padding: 4% 0;
-      border-radius: 60px;
-      text-decoration: none;
-      cursor: pointer;
-      & a {
-        color: white;
-        text-decoration: none;
-        font-size: 1em;
+      &:hover .check {
+        margin-right: 0;
       }
     }
-    .r-button:hover {
-      opacity: 0.8;
-      box-shadow: $box-shadow;
+  }
+}
+
+.r-card-1:hover,
+.r-card-2:hover,
+.r-card-3:hover {
+  box-shadow: 5px 5px 30px;
+  cursor: pointer;
+}
+
+.r-btn {
+  text-align: center;
+  font-family: $primary-font;
+  padding: 4% 25%;
+  .r-button {
+    color: white;
+    background: linear-gradient($secondary-color, $primary-color);
+    padding: 4% 0;
+    border-radius: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    & a {
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
     }
+  }
+  .r-button:hover {
+    opacity: 0.8;
+    box-shadow: $box-shadow;
   }
 }
 
