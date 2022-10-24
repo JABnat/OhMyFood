@@ -170,13 +170,12 @@ body {
       align-content: center;
       align-items: flex-start;
       justify-content: space-between;
+      & p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
     }
-    p {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-
     .price {
       display: flex;
       align-items: flex-end;

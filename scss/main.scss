@@ -246,6 +246,21 @@ body {
         flex-direction: column;
         height: 180px;
         width: 100%;
+        .nouveau {
+          background-color: $tertiary-color;
+          color: $green-text;
+          padding: 10px;
+          font-family: $primary-font;
+          text-align: center;
+          display: flex;
+          width: 65px;
+          border-radius: 4px;
+          margin-left: 69%;
+          align-self: center;
+          position: absolute;
+          margin-right: 13%;
+          margin-top: 4%;
+        }
         .img {
           height: 180px;
           object-fit: cover;
@@ -283,17 +298,22 @@ body {
             margin-top: -10px;
             opacity: 0;
             transition: opacity 0.2s ease-out;
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(
+              to right top,
+              $secondary-color,
+              $primary-color
+            );
           }
           .fa-regular {
             transition: opacity 0.2s ease-out;
           }
           &:hover .fa-solid {
             opacity: 1;
-            color: radial-gradient($secondary-color, $primary-color);
           }
           &:active .fa-solid {
             opacity: 1;
-            color: radial-gradient($secondary-color, $primary-color);
           }
           &:hover .fa-regular {
             opacity: 0;
@@ -432,6 +452,12 @@ body {
       .card-3,
       .card-4 {
         width: 43%;
+        .image {
+          .nouveau {
+            margin-right: 58%;
+            margin-top: 1%;
+          }
+        }
       }
     }
   }

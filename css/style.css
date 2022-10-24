@@ -255,6 +255,24 @@ body {
   height: 180px;
   width: 100%;
 }
+.restaurants .group .card-1 .image .nouveau,
+.restaurants .group .card-2 .image .nouveau,
+.restaurants .group .card-3 .image .nouveau,
+.restaurants .group .card-4 .image .nouveau {
+  background-color: #99e2d0;
+  color: #3c8a68;
+  padding: 10px;
+  font-family: "Roboto", "sans-serif";
+  text-align: center;
+  display: flex;
+  width: 65px;
+  border-radius: 4px;
+  margin-left: 69%;
+  align-self: center;
+  position: absolute;
+  margin-right: 13%;
+  margin-top: 4%;
+}
 .restaurants .group .card-1 .image .img,
 .restaurants .group .card-2 .image .img,
 .restaurants .group .card-3 .image .img,
@@ -311,6 +329,9 @@ body {
   margin-top: -10px;
   opacity: 0;
   transition: opacity 0.2s ease-out;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right top, #ff79da, #9356dc);
 }
 .restaurants .group .card-1 .text-layout .heart .fa-regular,
 .restaurants .group .card-2 .text-layout .heart .fa-regular,
@@ -323,14 +344,12 @@ body {
 .restaurants .group .card-3 .text-layout .heart:hover .fa-solid,
 .restaurants .group .card-4 .text-layout .heart:hover .fa-solid {
   opacity: 1;
-  color: radial-gradient(#ff79da, #9356dc);
 }
 .restaurants .group .card-1 .text-layout .heart:active .fa-solid,
 .restaurants .group .card-2 .text-layout .heart:active .fa-solid,
 .restaurants .group .card-3 .text-layout .heart:active .fa-solid,
 .restaurants .group .card-4 .text-layout .heart:active .fa-solid {
   opacity: 1;
-  color: radial-gradient(#ff79da, #9356dc);
 }
 .restaurants .group .card-1 .text-layout .heart:hover .fa-regular,
 .restaurants .group .card-2 .text-layout .heart:hover .fa-regular,
@@ -461,6 +480,13 @@ body {
 .restaurants .group .card-3,
 .restaurants .group .card-4 {
     width: 43%;
+  }
+  .restaurants .group .card-1 .image .nouveau,
+.restaurants .group .card-2 .image .nouveau,
+.restaurants .group .card-3 .image .nouveau,
+.restaurants .group .card-4 .image .nouveau {
+    margin-right: 58%;
+    margin-top: 1%;
   }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {

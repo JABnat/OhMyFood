@@ -178,7 +178,7 @@ body .text-grouping .text-icon {
   align-items: flex-start;
   justify-content: space-between;
 }
-body .text-grouping p {
+body .text-grouping .text-icon p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
